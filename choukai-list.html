@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<div style="display: flex; gap: 10px;">
+			<a href="./home.html">Home</a>
+			<a href="./test-list.html">Kiểm tra từ vựng</a>
+		</div>
+		<h2>
+			Danh sách luyện nghe
+		</h2>
+		<div id="test-list" style="display: flex; flex-wrap: wrap; width: 400px; gap: 10px;">
+
+		</div>
+		<script>
+			const testList = document.getElementById('test-list');
+			for (var i = 1; i < 51; i++) {
+				const div = document.createElement('div');
+				div.style.height = '30px';          // Chiều cao 30px
+				div.style.width = '70px';           // Chiều dài 40px
+				div.style.borderRadius = '5px';     // Border radius 5px
+				div.style.backgroundColor = 'white';// Background màu trắng
+				div.style.border = '1px solid gray';// Đường viền màu xám
+				let a = document.createElement('a');
+				// Đặt thuộc tính href và nội dung cho thẻ <a>
+				a.href = `./choukai${i}.html`;
+				a.textContent = `Bài ${i}`;
+				div.appendChild(a);
+				testList.appendChild(div);
+			}
+		</script>
+	</body>
+</html>
