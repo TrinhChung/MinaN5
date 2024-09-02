@@ -112,9 +112,9 @@ for i in range(1, 5):
             """
 <link rel="stylesheet" href="./choukai.css" type="text/css" />
 <link rel="stylesheet" href="./test.css" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="media/jui/js/jquery.min.js" type="text/javascript"></script>
+<script src="media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+<script src="media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="choukai.js"></script>
 """
         )

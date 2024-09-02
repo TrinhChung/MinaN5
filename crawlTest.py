@@ -40,13 +40,18 @@ for i in range(1, 51):
         '<i style="color: green; display: inline-block;">&#10004;</i>',
     )
 
+    scriptHtml = scriptHtml.replace(
+        "$(function () { $(",
+        "jQuery(function () { jQuery(",
+    )
+
     with open("test" + str(i) + ".html", "w", encoding="utf-8") as myFile:
         myFile.write(
             """
 <link rel="stylesheet" href="./test.css" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>"""
+<script src="media/jui/js/jquery.min.js" type="text/javascript"></script>
+<script src="media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+<script src="media/jui/js/jquery-migrate.min.js" type="text/javascript"></script></script>"""
         )
         myFile.write(
             """<div style="display: flex; gap: 10px;">

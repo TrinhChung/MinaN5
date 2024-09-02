@@ -1,476 +1,1446 @@
-
 <link rel="stylesheet" href="./test.css" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><div style="display: flex; gap: 10px;">
-			<a href="./home.html">Home</a>
-			<a href="./choukai-list.html">Nghe</a>
-		</div><style>hr.style-two{border:0}hr.style-one{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.3)}#table_tracnghiem{border:none}input[type="radio"]{border:unset}input[type="radio"]{-webkit-appearance:none;width:15px;height:15px;border:1px solid #19283C !important;border-radius:15px !important;background:transparent;opacity:0.7;margin-bottom:6px}input[type="radio"]:checked{background:#19283C;opacity:1}.bai_stt{width:40px;padding:5px 5px;margin-bottom:15px;font-size:14px;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;background-color:#5c90d2;border-radius:6px}table{width:100%}</style><div id="tracnghiemdiv">
-<form class="quiz-form" method="post" action="#" name="post">
-<hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問01:</div><font size="4" color="#0B0B61"><b>もみじ      </b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr1"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_11" type="hidden" name="correct[1]">
-<input id="answer_11" type="radio" name="answer[1]"><span style="font-size: 15px"> a.　Lá vàng </span><span id="result_question_11"></span> <span id="result_correct_11"></span></td></tr>
-<tr id="table_tracnghiem" class="tr2"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_12" type="hidden" name="correct[1]">
-<input id="answer_12" type="radio" name="answer[1]"><span style="font-size: 15px"> b.　Lá đỏ </span><span id="result_question_12"></span> <span id="result_correct_12"></span></td></tr>
-<tr id="table_tracnghiem" class="tr3"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_13" type="hidden" name="correct[1]">
-<input id="answer_13" type="radio" name="answer[1]"><span style="font-size: 15px"> c.　Lá khô </span><span id="result_question_13"></span> <span id="result_correct_13"></span></td></tr>
-<tr id="table_tracnghiem" class="tr4"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_14" type="hidden" name="correct[1]">
-<input id="answer_14" type="radio" name="answer[1]"><span style="font-size: 15px"> d.　Lá rụng </span><span id="result_question_14"></span> <span id="result_correct_14"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問02:</div><font size="4" color="#0B0B61"><b>しけん      </b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr5"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_21" type="hidden" name="correct[2]">
-<input id="answer_21" type="radio" name="answer[2]"><span style="font-size: 15px"> a.　Kỳ thi, bài thi </span><span id="result_question_21"></span> <span id="result_correct_21"></span></td></tr>
-<tr id="table_tracnghiem" class="tr6"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_22" type="hidden" name="correct[2]">
-<input id="answer_22" type="radio" name="answer[2]"><span style="font-size: 15px"> b.　Thiên nhiên </span><span id="result_question_22"></span> <span id="result_correct_22"></span></td></tr>
-<tr id="table_tracnghiem" class="tr7"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_23" type="hidden" name="correct[2]">
-<input id="answer_23" type="radio" name="answer[2]"><span style="font-size: 15px"> c.　Công ty </span><span id="result_question_23"></span> <span id="result_correct_23"></span></td></tr>
-<tr id="table_tracnghiem" class="tr8"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_24" type="hidden" name="correct[2]">
-<input id="answer_24" type="radio" name="answer[2]"><span style="font-size: 15px"> d.　Cái ví </span><span id="result_question_24"></span> <span id="result_correct_24"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問03:</div><font size="4" color="#0B0B61"><b>ホテル      </b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr9"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_31" type="hidden" name="correct[3]">
-<input id="answer_31" type="radio" name="answer[3]"><span style="font-size: 15px"> a.　Nhà hàng </span><span id="result_question_31"></span> <span id="result_correct_31"></span></td></tr>
-<tr id="table_tracnghiem" class="tr10"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_32" type="hidden" name="correct[3]">
-<input id="answer_32" type="radio" name="answer[3]"><span style="font-size: 15px"> b.　Công viên </span><span id="result_question_32"></span> <span id="result_correct_32"></span></td></tr>
-<tr id="table_tracnghiem" class="tr11"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_33" type="hidden" name="correct[3]">
-<input id="answer_33" type="radio" name="answer[3]"><span style="font-size: 15px"> c.　Khách sạn </span><span id="result_question_33"></span> <span id="result_correct_33"></span></td></tr>
-<tr id="table_tracnghiem" class="tr12"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_34" type="hidden" name="correct[3]">
-<input id="answer_34" type="radio" name="answer[3]"><span style="font-size: 15px"> d.　Sân vận động </span><span id="result_question_34"></span> <span id="result_correct_34"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問04:</div><font size="4" color="#0B0B61"><b>くもり      </b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr13"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_41" type="hidden" name="correct[4]">
-<input id="answer_41" type="radio" name="answer[4]"><span style="font-size: 15px"> a.　Mây </span><span id="result_question_41"></span> <span id="result_correct_41"></span></td></tr>
-<tr id="table_tracnghiem" class="tr14"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_42" type="hidden" name="correct[4]">
-<input id="answer_42" type="radio" name="answer[4]"><span style="font-size: 15px"> b.　Mưa </span><span id="result_question_42"></span> <span id="result_correct_42"></span></td></tr>
-<tr id="table_tracnghiem" class="tr15"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_43" type="hidden" name="correct[4]">
-<input id="answer_43" type="radio" name="answer[4]"><span style="font-size: 15px"> c.　Bão </span><span id="result_question_43"></span> <span id="result_correct_43"></span></td></tr>
-<tr id="table_tracnghiem" class="tr16"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_44" type="hidden" name="correct[4]">
-<input id="answer_44" type="radio" name="answer[4]"><span style="font-size: 15px"> d.　Nắng </span><span id="result_question_44"></span> <span id="result_correct_44"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問05:</div><font size="4" color="#0B0B61"><b>あたたかい</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr17"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_51" type="hidden" name="correct[5]">
-<input id="answer_51" type="radio" name="answer[5]"><span style="font-size: 15px"> a.　Lạnh </span><span id="result_question_51"></span> <span id="result_correct_51"></span></td></tr>
-<tr id="table_tracnghiem" class="tr18"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_52" type="hidden" name="correct[5]">
-<input id="answer_52" type="radio" name="answer[5]"><span style="font-size: 15px"> b.　Ấm </span><span id="result_question_52"></span> <span id="result_correct_52"></span></td></tr>
-<tr id="table_tracnghiem" class="tr19"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_53" type="hidden" name="correct[5]">
-<input id="answer_53" type="radio" name="answer[5]"><span style="font-size: 15px"> c.　Nóng </span><span id="result_question_53"></span> <span id="result_correct_53"></span></td></tr>
-<tr id="table_tracnghiem" class="tr20"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_54" type="hidden" name="correct[5]">
-<input id="answer_54" type="radio" name="answer[5]"><span style="font-size: 15px"> d.　Dễ chịu </span><span id="result_question_54"></span> <span id="result_correct_54"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問06:</div><font size="4" color="#0B0B61"><b>Gần</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr21"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_61" type="hidden" name="correct[6]">
-<input id="answer_61" type="radio" name="answer[6]"><span style="font-size: 15px"> a.　ちがい </span><span id="result_question_61"></span> <span id="result_correct_61"></span></td></tr>
-<tr id="table_tracnghiem" class="tr22"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_62" type="hidden" name="correct[6]">
-<input id="answer_62" type="radio" name="answer[6]"><span style="font-size: 15px"> b.　ちかい </span><span id="result_question_62"></span> <span id="result_correct_62"></span></td></tr>
-<tr id="table_tracnghiem" class="tr23"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_63" type="hidden" name="correct[6]">
-<input id="answer_63" type="radio" name="answer[6]"><span style="font-size: 15px"> c.　とおい </span><span id="result_question_63"></span> <span id="result_correct_63"></span></td></tr>
-<tr id="table_tracnghiem" class="tr24"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_64" type="hidden" name="correct[6]">
-<input id="answer_64" type="radio" name="answer[6]"><span style="font-size: 15px"> d.　とうおい </span><span id="result_question_64"></span> <span id="result_correct_64"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問07:</div><font size="4" color="#0B0B61"><b>Mùa</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr25"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_71" type="hidden" name="correct[7]">
-<input id="answer_71" type="radio" name="answer[7]"><span style="font-size: 15px"> a.　きげつ </span><span id="result_question_71"></span> <span id="result_correct_71"></span></td></tr>
-<tr id="table_tracnghiem" class="tr26"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_72" type="hidden" name="correct[7]">
-<input id="answer_72" type="radio" name="answer[7]"><span style="font-size: 15px"> b.　きせつ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_72"></span> <span id="result_correct_72"></span></td></tr>
-<tr id="table_tracnghiem" class="tr27"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_73" type="hidden" name="correct[7]">
-<input id="answer_73" type="radio" name="answer[7]"><span style="font-size: 15px"> c.　きせい </span><span id="result_question_73"></span> <span id="result_correct_73"></span></td></tr>
-<tr id="table_tracnghiem" class="tr28"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_74" type="hidden" name="correct[7]">
-<input id="answer_74" type="radio" name="answer[7]"><span style="font-size: 15px"> d.　きぜつ </span><span id="result_question_74"></span> <span id="result_correct_74"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問08:</div><font size="4" color="#0B0B61"><b>Nặng                               </b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr29"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_81" type="hidden" name="correct[8]">
-<input id="answer_81" type="radio" name="answer[8]"><span style="font-size: 15px"> a.　おもい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_81"></span> <span id="result_correct_81"></span></td></tr>
-<tr id="table_tracnghiem" class="tr30"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_82" type="hidden" name="correct[8]">
-<input id="answer_82" type="radio" name="answer[8]"><span style="font-size: 15px"> b.　かるい </span><span id="result_question_82"></span> <span id="result_correct_82"></span></td></tr>
-<tr id="table_tracnghiem" class="tr31"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_83" type="hidden" name="correct[8]">
-<input id="answer_83" type="radio" name="answer[8]"><span style="font-size: 15px"> c.　おおもい </span><span id="result_question_83"></span> <span id="result_correct_83"></span></td></tr>
-<tr id="table_tracnghiem" class="tr32"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_84" type="hidden" name="correct[8]">
-<input id="answer_84" type="radio" name="answer[8]"><span style="font-size: 15px"> d.　かるいい </span><span id="result_question_84"></span> <span id="result_correct_84"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問09:</div><font size="4" color="#0B0B61"><b>Ngọt</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr33"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_91" type="hidden" name="correct[9]">
-<input id="answer_91" type="radio" name="answer[9]"><span style="font-size: 15px"> a.　しっぱい </span><span id="result_question_91"></span> <span id="result_correct_91"></span></td></tr>
-<tr id="table_tracnghiem" class="tr34"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_92" type="hidden" name="correct[9]">
-<input id="answer_92" type="radio" name="answer[9]"><span style="font-size: 15px"> b.　にがい </span><span id="result_question_92"></span> <span id="result_correct_92"></span></td></tr>
-<tr id="table_tracnghiem" class="tr35"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_93" type="hidden" name="correct[9]">
-<input id="answer_93" type="radio" name="answer[9]"><span style="font-size: 15px"> c.　からい </span><span id="result_question_93"></span> <span id="result_correct_93"></span></td></tr>
-<tr id="table_tracnghiem" class="tr36"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_94" type="hidden" name="correct[9]">
-<input id="answer_94" type="radio" name="answer[9]"><span style="font-size: 15px"> d.　あまい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_94"></span> <span id="result_correct_94"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問10:</div><font size="4" color="#0B0B61"><b>Món hải sản và rau chiên tẩm bột</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr37"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_101" type="hidden" name="correct[10]">
-<input id="answer_101" type="radio" name="answer[10]"><span style="font-size: 15px"> a.　すぶた </span><span id="result_question_101"></span> <span id="result_correct_101"></span></td></tr>
-<tr id="table_tracnghiem" class="tr38"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_102" type="hidden" name="correct[10]">
-<input id="answer_102" type="radio" name="answer[10]"><span style="font-size: 15px"> b.　すきやき </span><span id="result_question_102"></span> <span id="result_correct_102"></span></td></tr>
-<tr id="table_tracnghiem" class="tr39"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_103" type="hidden" name="correct[10]">
-<input id="answer_103" type="radio" name="answer[10]"><span style="font-size: 15px"> c.　てんぶら </span><span id="result_question_103"></span> <span id="result_correct_103"></span></td></tr>
-<tr id="table_tracnghiem" class="tr40"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_104" type="hidden" name="correct[10]">
-<input id="answer_104" type="radio" name="answer[10]"><span style="font-size: 15px"> d.　てんぷら </span><span id="result_question_104"></span> <span id="result_correct_104"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問11:</div><font size="4" color="#0B0B61"><b>まつり</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr41"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_111" type="hidden" name="correct[11]">
-<input id="answer_111" type="radio" name="answer[11]"><span style="font-size: 15px"> a.　祭り </span><span id="result_question_111"></span> <span id="result_correct_111"></span></td></tr>
-<tr id="table_tracnghiem" class="tr42"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_112" type="hidden" name="correct[11]">
-<input id="answer_112" type="radio" name="answer[11]"><span style="font-size: 15px"> b.　発り </span><span id="result_question_112"></span> <span id="result_correct_112"></span></td></tr>
-<tr id="table_tracnghiem" class="tr43"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_113" type="hidden" name="correct[11]">
-<input id="answer_113" type="radio" name="answer[11]"><span style="font-size: 15px"> c.　察り </span><span id="result_question_113"></span> <span id="result_correct_113"></span></td></tr>
-<tr id="table_tracnghiem" class="tr44"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_114" type="hidden" name="correct[11]">
-<input id="answer_114" type="radio" name="answer[11]"><span style="font-size: 15px"> d.　際り </span><span id="result_question_114"></span> <span id="result_correct_114"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問12:</div><font size="4" color="#0B0B61"><b>ふゆ</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr45"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_121" type="hidden" name="correct[12]">
-<input id="answer_121" type="radio" name="answer[12]"><span style="font-size: 15px"> a.　春 </span><span id="result_question_121"></span> <span id="result_correct_121"></span></td></tr>
-<tr id="table_tracnghiem" class="tr46"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_122" type="hidden" name="correct[12]">
-<input id="answer_122" type="radio" name="answer[12]"><span style="font-size: 15px"> b.　冬 </span><span id="result_question_122"></span> <span id="result_correct_122"></span></td></tr>
-<tr id="table_tracnghiem" class="tr47"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_123" type="hidden" name="correct[12]">
-<input id="answer_123" type="radio" name="answer[12]"><span style="font-size: 15px"> c.　秋 </span><span id="result_question_123"></span> <span id="result_correct_123"></span></td></tr>
-<tr id="table_tracnghiem" class="tr48"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_124" type="hidden" name="correct[12]">
-<input id="answer_124" type="radio" name="answer[12]"><span style="font-size: 15px"> d.　夏 </span><span id="result_question_124"></span> <span id="result_correct_124"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問13:</div><font size="4" color="#0B0B61"><b>はやい</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr49"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_131" type="hidden" name="correct[13]">
-<input id="answer_131" type="radio" name="answer[13]"><span style="font-size: 15px"> a.　速い </span><span id="result_question_131"></span> <span id="result_correct_131"></span></td></tr>
-<tr id="table_tracnghiem" class="tr50"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_132" type="hidden" name="correct[13]">
-<input id="answer_132" type="radio" name="answer[13]"><span style="font-size: 15px"> b.　遅い </span><span id="result_question_132"></span> <span id="result_correct_132"></span></td></tr>
-<tr id="table_tracnghiem" class="tr51"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_133" type="hidden" name="correct[13]">
-<input id="answer_133" type="radio" name="answer[13]"><span style="font-size: 15px"> c.　束い </span><span id="result_question_133"></span> <span id="result_correct_133"></span></td></tr>
-<tr id="table_tracnghiem" class="tr52"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_134" type="hidden" name="correct[13]">
-<input id="answer_134" type="radio" name="answer[13]"><span style="font-size: 15px"> d.　高い </span><span id="result_question_134"></span> <span id="result_correct_134"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問14:</div><font size="4" color="#0B0B61"><b>うみ</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr53"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_141" type="hidden" name="correct[14]">
-<input id="answer_141" type="radio" name="answer[14]"><span style="font-size: 15px"> a.　毎 </span><span id="result_question_141"></span> <span id="result_correct_141"></span></td></tr>
-<tr id="table_tracnghiem" class="tr54"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_142" type="hidden" name="correct[14]">
-<input id="answer_142" type="radio" name="answer[14]"><span style="font-size: 15px"> b.　晦 </span><span id="result_question_142"></span> <span id="result_correct_142"></span></td></tr>
-<tr id="table_tracnghiem" class="tr55"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_143" type="hidden" name="correct[14]">
-<input id="answer_143" type="radio" name="answer[14]"><span style="font-size: 15px"> c.　湖 </span><span id="result_question_143"></span> <span id="result_correct_143"></span></td></tr>
-<tr id="table_tracnghiem" class="tr56"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_144" type="hidden" name="correct[14]">
-<input id="answer_144" type="radio" name="answer[14]"><span style="font-size: 15px"> d.　海 </span><span id="result_question_144"></span> <span id="result_correct_144"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問15:</div><font size="4" color="#0B0B61"><b>かるい       </b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr57"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_151" type="hidden" name="correct[15]">
-<input id="answer_151" type="radio" name="answer[15]"><span style="font-size: 15px"> a.　転い </span><span id="result_question_151"></span> <span id="result_correct_151"></span></td></tr>
-<tr id="table_tracnghiem" class="tr58"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_152" type="hidden" name="correct[15]">
-<input id="answer_152" type="radio" name="answer[15]"><span style="font-size: 15px"> b.　連い </span><span id="result_question_152"></span> <span id="result_correct_152"></span></td></tr>
-<tr id="table_tracnghiem" class="tr59"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_153" type="hidden" name="correct[15]">
-<input id="answer_153" type="radio" name="answer[15]"><span style="font-size: 15px"> c.　軽い </span><span id="result_question_153"></span> <span id="result_correct_153"></span></td></tr>
-<tr id="table_tracnghiem" class="tr60"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_154" type="hidden" name="correct[15]">
-<input id="answer_154" type="radio" name="answer[15]"><span style="font-size: 15px"> d.　塩い </span><span id="result_question_154"></span> <span id="result_correct_154"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問16:</div><font size="4" color="#0B0B61"><b>空港</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr61"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_161" type="hidden" name="correct[16]">
-<input id="answer_161" type="radio" name="answer[16]"><span style="font-size: 15px"> a.　くこう </span><span id="result_question_161"></span> <span id="result_correct_161"></span></td></tr>
-<tr id="table_tracnghiem" class="tr62"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_162" type="hidden" name="correct[16]">
-<input id="answer_162" type="radio" name="answer[16]"><span style="font-size: 15px"> b.　くうこ </span><span id="result_question_162"></span> <span id="result_correct_162"></span></td></tr>
-<tr id="table_tracnghiem" class="tr63"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_163" type="hidden" name="correct[16]">
-<input id="answer_163" type="radio" name="answer[16]"><span style="font-size: 15px"> c.　こうくう </span><span id="result_question_163"></span> <span id="result_correct_163"></span></td></tr>
-<tr id="table_tracnghiem" class="tr64"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_164" type="hidden" name="correct[16]">
-<input id="answer_164" type="radio" name="answer[16]"><span style="font-size: 15px"> d.　くうこう </span><span id="result_question_164"></span> <span id="result_correct_164"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問17:</div><font size="4" color="#0B0B61"><b>夏</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr65"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_171" type="hidden" name="correct[17]">
-<input id="answer_171" type="radio" name="answer[17]"><span style="font-size: 15px"> a.　なつ </span><span id="result_question_171"></span> <span id="result_correct_171"></span></td></tr>
-<tr id="table_tracnghiem" class="tr66"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_172" type="hidden" name="correct[17]">
-<input id="answer_172" type="radio" name="answer[17]"><span style="font-size: 15px"> b.　はる </span><span id="result_question_172"></span> <span id="result_correct_172"></span></td></tr>
-<tr id="table_tracnghiem" class="tr67"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_173" type="hidden" name="correct[17]">
-<input id="answer_173" type="radio" name="answer[17]"><span style="font-size: 15px"> c.　あき </span><span id="result_question_173"></span> <span id="result_correct_173"></span></td></tr>
-<tr id="table_tracnghiem" class="tr68"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_174" type="hidden" name="correct[17]">
-<input id="answer_174" type="radio" name="answer[17]"><span style="font-size: 15px"> d.　ふゆ </span><span id="result_question_174"></span> <span id="result_correct_174"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問18:</div><font size="4" color="#0B0B61"><b>世界</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr69"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_181" type="hidden" name="correct[18]">
-<input id="answer_181" type="radio" name="answer[18]"><span style="font-size: 15px"> a.　せかく </span><span id="result_question_181"></span> <span id="result_correct_181"></span></td></tr>
-<tr id="table_tracnghiem" class="tr70"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_182" type="hidden" name="correct[18]">
-<input id="answer_182" type="radio" name="answer[18]"><span style="font-size: 15px"> b.　かせい </span><span id="result_question_182"></span> <span id="result_correct_182"></span></td></tr>
-<tr id="table_tracnghiem" class="tr71"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_183" type="hidden" name="correct[18]">
-<input id="answer_183" type="radio" name="answer[18]"><span style="font-size: 15px"> c.　せかい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_183"></span> <span id="result_correct_183"></span></td></tr>
-<tr id="table_tracnghiem" class="tr72"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_184" type="hidden" name="correct[18]">
-<input id="answer_184" type="radio" name="answer[18]"><span style="font-size: 15px"> d.　せいかい </span><span id="result_question_184"></span> <span id="result_correct_184"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問19:</div><font size="4" color="#0B0B61"><b>多い</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr73"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_191" type="hidden" name="correct[19]">
-<input id="answer_191" type="radio" name="answer[19]"><span style="font-size: 15px"> a.　あおい </span><span id="result_question_191"></span> <span id="result_correct_191"></span></td></tr>
-<tr id="table_tracnghiem" class="tr74"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_192" type="hidden" name="correct[19]">
-<input id="answer_192" type="radio" name="answer[19]"><span style="font-size: 15px"> b.　おいい </span><span id="result_question_192"></span> <span id="result_correct_192"></span></td></tr>
-<tr id="table_tracnghiem" class="tr75"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_193" type="hidden" name="correct[19]">
-<input id="answer_193" type="radio" name="answer[19]"><span style="font-size: 15px"> c.　おい </span><span id="result_question_193"></span> <span id="result_correct_193"></span></td></tr>
-<tr id="table_tracnghiem" class="tr76"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_194" type="hidden" name="correct[19]">
-<input id="answer_194" type="radio" name="answer[19]"><span style="font-size: 15px"> d.　おおい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_194"></span> <span id="result_correct_194"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問20:</div><font size="4" color="#0B0B61"><b>雪</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr77"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_201" type="hidden" name="correct[20]">
-<input id="answer_201" type="radio" name="answer[20]"><span style="font-size: 15px"> a.　ゆきい </span><span id="result_question_201"></span> <span id="result_correct_201"></span></td></tr>
-<tr id="table_tracnghiem" class="tr78"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_202" type="hidden" name="correct[20]">
-<input id="answer_202" type="radio" name="answer[20]"><span style="font-size: 15px"> b.　ゆうき </span><span id="result_question_202"></span> <span id="result_correct_202"></span></td></tr>
-<tr id="table_tracnghiem" class="tr79"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_203" type="hidden" name="correct[20]">
-<input id="answer_203" type="radio" name="answer[20]"><span style="font-size: 15px"> c.　ゆき </span><span id="result_question_203"></span> <span id="result_correct_203"></span></td></tr>
-<tr id="table_tracnghiem" class="tr80"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_204" type="hidden" name="correct[20]">
-<input id="answer_204" type="radio" name="answer[20]"><span style="font-size: 15px"> d.　ゆぎ </span><span id="result_question_204"></span> <span id="result_correct_204"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問21:</div><font size="4" color="#0B0B61"><b>きのうは<ruby>雨<rp>（</rp><rt>あめ</rt><rp>）</rp></ruby>（　）。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr81"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_211" type="hidden" name="correct[21]">
-<input id="answer_211" type="radio" name="answer[21]"><span style="font-size: 15px"> a.　かったです </span><span id="result_question_211"></span> <span id="result_correct_211"></span></td></tr>
-<tr id="table_tracnghiem" class="tr82"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_212" type="hidden" name="correct[21]">
-<input id="answer_212" type="radio" name="answer[21]"><span style="font-size: 15px"> b.　でした </span><span id="result_question_212"></span> <span id="result_correct_212"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問22:</div><font size="4" color="#0B0B61"><b>きのうのパーティーは（　）です。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr83"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_221" type="hidden" name="correct[22]">
-<input id="answer_221" type="radio" name="answer[22]"><span style="font-size: 15px"> a.　おもしろいかった </span><span id="result_question_221"></span> <span id="result_correct_221"></span></td></tr>
-<tr id="table_tracnghiem" class="tr84"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_222" type="hidden" name="correct[22]">
-<input id="answer_222" type="radio" name="answer[22]"><span style="font-size: 15px"> b.　おもしろかった </span><span id="result_question_222"></span> <span id="result_correct_222"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問23:</div><font size="4" color="#0B0B61"><b><ruby>夏<rp>（</rp><rt>なつ</rt><rp>）</rp></ruby>と<ruby>冬<rp>（</rp><rt>ふゆ</rt><rp>）</rp></ruby>と（　）が<ruby>好<rp>（</rp><rt>す</rt><rp>）</rp></ruby>きですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr85"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_231" type="hidden" name="correct[23]">
-<input id="answer_231" type="radio" name="answer[23]"><span style="font-size: 15px"> a.　いつ </span><span id="result_question_231"></span> <span id="result_correct_231"></span></td></tr>
-<tr id="table_tracnghiem" class="tr86"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_232" type="hidden" name="correct[23]">
-<input id="answer_232" type="radio" name="answer[23]"><span style="font-size: 15px"> b.　どちら </span><span id="result_question_232"></span> <span id="result_correct_232"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問24:</div><font size="4" color="#0B0B61"><b>ホンコンとシンガポールと（　）が<ruby>暖<rp>（</rp><rt>あたた</rt><rp>）</rp></ruby>かいですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr87"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_241" type="hidden" name="correct[24]">
-<input id="answer_241" type="radio" name="answer[24]"><span style="font-size: 15px"> a.　どちら </span><span id="result_question_241"></span> <span id="result_correct_241"></span></td></tr>
-<tr id="table_tracnghiem" class="tr88"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_242" type="hidden" name="correct[24]">
-<input id="answer_242" type="radio" name="answer[24]"><span style="font-size: 15px"> b.　なに </span><span id="result_question_242"></span> <span id="result_correct_242"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問25:</div><font size="4" color="#0B0B61"><b><ruby>世界<rp>（</rp><rt>せかい</rt><rp>）</rp></ruby>で（　）がいちばん<ruby>人<rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>が<ruby>多<rp>（</rp><rt>おお</rt><rp>）</rp></ruby>いですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr89"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_251" type="hidden" name="correct[25]">
-<input id="answer_251" type="radio" name="answer[25]"><span style="font-size: 15px"> a.　なに </span><span id="result_question_251"></span> <span id="result_correct_251"></span></td></tr>
-<tr id="table_tracnghiem" class="tr90"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_252" type="hidden" name="correct[25]">
-<input id="answer_252" type="radio" name="answer[25]"><span style="font-size: 15px"> b.　どこ </span><span id="result_question_252"></span> <span id="result_correct_252"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問26:</div><font size="4" color="#0B0B61"><b><ruby>中国<rp>（</rp><rt>ちゅうごく</rt><rp>）</rp></ruby>は<ruby>日本<rp>（</rp><rt>にほん</rt><rp>）</rp></ruby>（　）<ruby>大<rp>（</rp><rt>おお</rt><rp>）</rp></ruby>きいです。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr91"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_261" type="hidden" name="correct[26]">
-<input id="answer_261" type="radio" name="answer[26]"><span style="font-size: 15px"> a.　より </span><span id="result_question_261"></span> <span id="result_correct_261"></span></td></tr>
-<tr id="table_tracnghiem" class="tr92"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_262" type="hidden" name="correct[26]">
-<input id="answer_262" type="radio" name="answer[26]"><span style="font-size: 15px"> b.　ほう </span><span id="result_question_262"></span> <span id="result_correct_262"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問27:</div><font size="4" color="#0B0B61"><b>A: コーヒーと<ruby>紅茶<rp>（</rp><rt>こうちゃ</rt><rp>）</rp></ruby>とどちらが<ruby>好<rp>（</rp><rt>す</rt><rp>）</rp></ruby>きですか。<p> B:（　）<ruby>好<rp>（</rp><rt>す</rt><rp>）</rp></ruby>きです。</p></b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr93"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_271" type="hidden" name="correct[27]">
-<input id="answer_271" type="radio" name="answer[27]"><span style="font-size: 15px"> a.　どちらも </span><span id="result_question_271"></span> <span id="result_correct_271"></span></td></tr>
-<tr id="table_tracnghiem" class="tr94"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_272" type="hidden" name="correct[27]">
-<input id="answer_272" type="radio" name="answer[27]"><span style="font-size: 15px"> b.　どちらが </span><span id="result_question_272"></span> <span id="result_correct_272"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問28:</div><font size="4" color="#0B0B61"><b>A: <ruby>海<rp>（</rp><rt>うみ</rt><rp>）</rp></ruby>と<ruby>山<rp>（</rp><rt>やま</rt><rp>）</rp></ruby>（　）どちらが<ruby>好<rp>（</rp><rt>す</rt><rp>）</rp></ruby>きですか。<p>B: <ruby>海<rp>（</rp><rt>うみ</rt><rp>）</rp></ruby>のほうが<ruby>好<rp>（</rp><rt>す</rt><rp>）</rp></ruby>きです。</p></b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr95"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_281" type="hidden" name="correct[28]">
-<input id="answer_281" type="radio" name="answer[28]"><span style="font-size: 15px"> a.　と </span><span id="result_question_281"></span> <span id="result_correct_281"></span></td></tr>
-<tr id="table_tracnghiem" class="tr96"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_282" type="hidden" name="correct[28]">
-<input id="answer_282" type="radio" name="answer[28]"><span style="font-size: 15px"> b.　も </span><span id="result_question_282"></span> <span id="result_correct_282"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one"><font size="4" color="#0B0B61"><b>この<ruby>教室<rp>（</rp><rt>きょうしつ</rt><rp>）</rp></ruby>（１）だれ（２）いちばん<ruby>元気<rp>（</rp><rt>げんき</rt><rp>）</rp></ruby>ですか。</b></font><hr class="style-two">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問29:</div><font size="4" color="#0B0B61"><b>(1)</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr97"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_291" type="hidden" name="correct[29]">
-<input id="answer_291" type="radio" name="answer[29]"><span style="font-size: 15px"> a.　で </span><span id="result_question_291"></span> <span id="result_correct_291"></span></td></tr>
-<tr id="table_tracnghiem" class="tr98"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_292" type="hidden" name="correct[29]">
-<input id="answer_292" type="radio" name="answer[29]"><span style="font-size: 15px"> b.　に </span><span id="result_question_292"></span> <span id="result_correct_292"></span></td></tr>
-</tbody></table>
-</div><hr class="style-two">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問30:</div><font size="4" color="#0B0B61"><b>(2)</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr99"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_301" type="hidden" name="correct[30]">
-<input id="answer_301" type="radio" name="answer[30]"><span style="font-size: 15px"> a.　を </span><span id="result_question_301"></span> <span id="result_correct_301"></span></td></tr>
-<tr id="table_tracnghiem" class="tr100"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_302" type="hidden" name="correct[30]">
-<input id="answer_302" type="radio" name="answer[30]"><span style="font-size: 15px"> b.　が </span><span id="result_question_302"></span> <span id="result_correct_302"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問31:</div><font size="4" color="#0B0B61"><b><ruby>地下鉄<rp>（</rp><rt>ちかてつ</rt><rp>）</rp></ruby>（　）タクシー（　）<ruby>安<rp>（</rp><rt>やす</rt><rp>）</rp></ruby>いです。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr101"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_311" type="hidden" name="correct[31]">
-<input id="answer_311" type="radio" name="answer[31]"><span style="font-size: 15px"> a.　は、より </span><span id="result_question_311"></span> <span id="result_correct_311"></span></td></tr>
-<tr id="table_tracnghiem" class="tr102"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_312" type="hidden" name="correct[31]">
-<input id="answer_312" type="radio" name="answer[31]"><span style="font-size: 15px"> b.　ほうが、が </span><span id="result_question_312"></span> <span id="result_correct_312"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問32:</div><font size="4" color="#0B0B61"><b><ruby>暑<rp>（</rp><rt>あつ</rt><rp>）</rp></ruby>い<ruby>季節<rp>（</rp><rt>きせつ</rt><rp>）</rp></ruby>（　）<ruby>寒<rp>（</rp><rt>さむ</rt><rp>）</rp></ruby>い<ruby>季節<rp>（</rp><rt>きせつ</rt><rp>）</rp></ruby>（　）どちら（　）いいですか。<p>…<ruby>暑<rp>（</rp><rt>あつ</rt><rp>）</rp></ruby>い<ruby>季節<rp>（</rp><rt>きせつ</rt><rp>）</rp></ruby>（　）ほう（　）いいです。</p></b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr103"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_321" type="hidden" name="correct[32]">
-<input id="answer_321" type="radio" name="answer[32]"><span style="font-size: 15px"> a.　に、に、が、と、が </span><span id="result_question_321"></span> <span id="result_correct_321"></span></td></tr>
-<tr id="table_tracnghiem" class="tr104"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_322" type="hidden" name="correct[32]">
-<input id="answer_322" type="radio" name="answer[32]"><span style="font-size: 15px"> b.　と、と、が、の、が </span><span id="result_question_322"></span> <span id="result_correct_322"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問33:</div><font size="4" color="#0B0B61"><b>１<ruby>年<rp>（</rp><rt>ねん</rt><rp>）</rp></ruby>（　）<ruby>何月<rp>（</rp><rt>なんがつ</rt><rp>）</rp></ruby>（　）いちばん<ruby>雨<rp>（</rp><rt>あめ</rt><rp>）</rp></ruby>（　）<ruby>多<rp>（</rp><rt>おお</rt><rp>）</rp></ruby>いですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr105"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_331" type="hidden" name="correct[33]">
-<input id="answer_331" type="radio" name="answer[33]"><span style="font-size: 15px"> a.　と、と、が </span><span id="result_question_331"></span> <span id="result_correct_331"></span></td></tr>
-<tr id="table_tracnghiem" class="tr106"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_332" type="hidden" name="correct[33]">
-<input id="answer_332" type="radio" name="answer[33]"><span style="font-size: 15px"> b.　で、が、が </span><span id="result_question_332"></span> <span id="result_correct_332"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問34:</div><font size="4" color="#0B0B61"><b><ruby>桜<rp>（</rp><rt>さくら</rt><rp>）</rp></ruby>（　）<ruby>日本<rp>（</rp><rt>にほん</rt><rp>）</rp></ruby>の<ruby>花<rp>（</rp><rt>はな</rt><rp>）</rp></ruby>（　）いちばん<ruby>有名<rp>（</rp><rt>ゆうめい</rt><rp>）</rp></ruby>です。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr107"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_341" type="hidden" name="correct[34]">
-<input id="answer_341" type="radio" name="answer[34]"><span style="font-size: 15px"> a.　は、で </span><span id="result_question_341"></span> <span id="result_correct_341"></span></td></tr>
-<tr id="table_tracnghiem" class="tr108"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_342" type="hidden" name="correct[34]">
-<input id="answer_342" type="radio" name="answer[34]"><span style="font-size: 15px"> b.　に、で </span><span id="result_question_342"></span> <span id="result_correct_342"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問35:</div><font size="4" color="#0B0B61"><b><ruby>松本<rp>（</rp><rt>まつもと</rt><rp>）</rp></ruby>さん（　）<ruby>山田<rp>（</rp><rt>やまだ</rt><rp>）</rp></ruby>さん（　）どちら（　）ダンス（　）<ruby>上手<rp>（</rp><rt>じょうず</rt><rp>）</rp></ruby>ですか。<p>           …どちら（　）<ruby>上手<rp>（</rp><rt>じょうず</rt><rp>）</rp></ruby>です。</p></b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr109"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_351" type="hidden" name="correct[35]">
-<input id="answer_351" type="radio" name="answer[35]"><span style="font-size: 15px"> a.　と、と、が、が、も </span><span id="result_question_351"></span> <span id="result_correct_351"></span></td></tr>
-<tr id="table_tracnghiem" class="tr110"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_352" type="hidden" name="correct[35]">
-<input id="answer_352" type="radio" name="answer[35]"><span style="font-size: 15px"> b.　と、に、は、が、も </span><span id="result_question_352"></span> <span id="result_correct_352"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問36:</div><font size="4" color="#0B0B61"><b><ruby>飛行機<rp>（</rp><rt>ひこうき</rt><rp>）</rp></ruby>と<ruby>新幹線<rp>（</rp><rt>しんかんせん</rt><rp>）</rp></ruby>と（　）が<ruby>早<rp>（</rp><rt>はや</rt><rp>）</rp></ruby>いですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr111"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_361" type="hidden" name="correct[36]">
-<input id="answer_361" type="radio" name="answer[36]"><span style="font-size: 15px"> a.　どちら </span><span id="result_question_361"></span> <span id="result_correct_361"></span></td></tr>
-<tr id="table_tracnghiem" class="tr112"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_362" type="hidden" name="correct[36]">
-<input id="answer_362" type="radio" name="answer[36]"><span style="font-size: 15px"> b.　どこ </span><span id="result_question_362"></span> <span id="result_correct_362"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問37:</div><font size="4" color="#0B0B61"><b>スポーツで（　）がいちばんおもしろいですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr113"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_371" type="hidden" name="correct[37]">
-<input id="answer_371" type="radio" name="answer[37]"><span style="font-size: 15px"> a.　どう </span><span id="result_question_371"></span> <span id="result_correct_371"></span></td></tr>
-<tr id="table_tracnghiem" class="tr114"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_372" type="hidden" name="correct[37]">
-<input id="answer_372" type="radio" name="answer[37]"><span style="font-size: 15px"> b.　なに </span><span id="result_question_372"></span> <span id="result_correct_372"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問38:</div><font size="4" color="#0B0B61"><b><ruby>京都<rp>（</rp><rt>きょうと</rt><rp>）</rp></ruby><ruby>旅行<rp>（</rp><rt>りょこう</rt><rp>）</rp></ruby>は（　）でしたか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr115"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_381" type="hidden" name="correct[38]">
-<input id="answer_381" type="radio" name="answer[38]"><span style="font-size: 15px"> a.　どこ </span><span id="result_question_381"></span> <span id="result_correct_381"></span></td></tr>
-<tr id="table_tracnghiem" class="tr116"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_382" type="hidden" name="correct[38]">
-<input id="answer_382" type="radio" name="answer[38]"><span style="font-size: 15px"> b.　どう </span><span id="result_question_382"></span> <span id="result_correct_382"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問39:</div><font size="4" color="#0B0B61"><b><ruby>来年<rp>（</rp><rt>らいねん</rt><rp>）</rp></ruby>タイへ<ruby>行<rp>（</rp><rt>い</rt><rp>）</rp></ruby>きます。（　）がいちばんいい<ruby>季節<rp>（</rp><rt>きせつ</rt><rp>）</rp></ruby>ですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr117"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_391" type="hidden" name="correct[39]">
-<input id="answer_391" type="radio" name="answer[39]"><span style="font-size: 15px"> a.　いつ </span><span id="result_question_391"></span> <span id="result_correct_391"></span></td></tr>
-<tr id="table_tracnghiem" class="tr118"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_392" type="hidden" name="correct[39]">
-<input id="answer_392" type="radio" name="answer[39]"><span style="font-size: 15px"> b.　なに </span><span id="result_question_392"></span> <span id="result_correct_392"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one">
-<div class="tracnghiem">
-<div id="question"><div class="bai_stt">問40:</div><font size="4" color="#0B0B61"><b><ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>の<ruby>本屋<rp>(</rp><rt>ほんや</rt><rp>)</rp></ruby>で（　）がいちばん<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>が<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>いですか。</b></font></div>
-<table id="table_tracnghiem">
-<tbody><tr id="table_tracnghiem" class="tr119"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_401" type="hidden" name="correct[40]">
-<input id="answer_401" type="radio" name="answer[40]"><span style="font-size: 15px"> a.　どれ </span><span id="result_question_401"></span> <span id="result_correct_401"></span></td></tr>
-<tr id="table_tracnghiem" class="tr120"> <td id="table_tracnghiem" class="item1"><input id="answer_correct_402" type="hidden" name="correct[40]">
-<input id="answer_402" type="radio" name="answer[40]"><span style="font-size: 15px"> b.　どこ </span><span id="result_question_402"></span> <span id="result_correct_402"></span></td></tr>
-</tbody></table>
-</div><hr class="style-one"><input type="button" value="Kết Quả" onclick="check_result();" class="btn btn-danger" id="ketqua">
-<input type="button" value="Làm Lại" onclick="reset_result();" class="btn btn-success" id="lamlai">
-<input type="button" value="Đáp Án" onclick="result_correct();" class="btn btn-primary" id="dapan" data-toggle="tooltip" title="" data-original-title="Bạn chỉ xem được đáp án khi làm đúng từ 60% trở lên">
-</form>
-</div><script type="text/javascript">var question_count=30;</script><script type="text/javascript">var answer_id=new Array();var answer_correct=new Array();var your_answer=new Array('<i style="color: red; display: inline-block;">&#10008;</i>','<i style="color: green; display: inline-block;">&#10004;</i>');answer_id[0]=new Array(11,12,13,14);answer_correct[0]=12;answer_id[1]=new Array(21,22,23,24);answer_correct[1]=21;answer_id[2]=new Array(31,32,33,34);answer_correct[2]=33;answer_id[3]=new Array(41,42,43,44);answer_correct[3]=41;answer_id[4]=new Array(51,52,53,54);answer_correct[4]=53;answer_id[5]=new Array(61,62,63,64);answer_correct[5]=62;answer_id[6]=new Array(71,72,73,74);answer_correct[6]=72;answer_id[7]=new Array(81,82,83,84);answer_correct[7]=81;answer_id[8]=new Array(91,92,93,94);answer_correct[8]=94;answer_id[9]=new Array(101,102,103,104);answer_correct[9]=104;answer_id[10]=new Array(111,112,113,114);answer_correct[10]=111;answer_id[11]=new Array(121,122,123,124);answer_correct[11]=122;answer_id[12]=new Array(131,132,133,134);answer_correct[12]=131;answer_id[13]=new Array(141,142,143,144);answer_correct[13]=144;answer_id[14]=new Array(151,152,153,154);answer_correct[14]=153;answer_id[15]=new Array(161,162,163,164);answer_correct[15]=164;answer_id[16]=new Array(171,172,173,174);answer_correct[16]=171;answer_id[17]=new Array(181,182,183,184);answer_correct[17]=183;answer_id[18]=new Array(191,192,193,194);answer_correct[18]=194;answer_id[19]=new Array(201,202,203,204);answer_correct[19]=203;answer_id[20]=new Array(211,212);answer_correct[20]=212;answer_id[21]=new Array(221,222);answer_correct[21]=222;answer_id[22]=new Array(231,232);answer_correct[22]=232;answer_id[23]=new Array(241,242);answer_correct[23]=241;answer_id[24]=new Array(251,252);answer_correct[24]=252;answer_id[25]=new Array(261,262);answer_correct[25]=261;answer_id[26]=new Array(271,272);answer_correct[26]=271;answer_id[27]=new Array(281,282);answer_correct[27]=281;answer_id[28]=new Array(291,292);answer_correct[28]=291;answer_id[29]=new Array(301,302);answer_correct[29]=302;answer_id[30]=new Array(311,312);answer_correct[30]=311;answer_id[31]=new Array(321,322);answer_correct[31]=322;answer_id[32]=new Array(331,332);answer_correct[32]=332;answer_id[33]=new Array(341,342);answer_correct[33]=341;answer_id[34]=new Array(351,352);answer_correct[34]=351;answer_id[35]=new Array(361,362);answer_correct[35]=361;answer_id[36]=new Array(371,372);answer_correct[36]=372;answer_id[37]=new Array(381,382);answer_correct[37]=382;answer_id[38]=new Array(391,392);answer_correct[38]=391;answer_id[39]=new Array(401,402);answer_correct[39]=402;function result_correct(){var your_answer_correct=0;for(i=0;i<answer_correct.length;i++){if(document.getElementById('answer_'+answer_correct[i]).checked==true){your_answer_correct++;}}
-var tyledung=(your_answer_correct/question_count)*100;var username="Admin";if(tyledung>=0||username=='Admin'){for(i in answer_correct){document.getElementById('result_correct_'+answer_correct[i]).innerHTML=your_answer[1];}}}
-function reset_result(){for(i=0;i<answer_id.length;i++){for(j=0;j<answer_id[i].length;j++){document.getElementById('result_question_'+answer_id[i][j]).innerHTML='';document.getElementById('result_correct_'+answer_id[i][j]).innerHTML='';document.getElementById('answer_'+answer_id[i][j]).disabled=false;document.getElementById('answer_'+answer_id[i][j]).checked=false;}}
-jQuery.noConflict();var j$=jQuery;j$("#table_tracnghiem tr").css('color','black');}
-function check_result(){var your_answer_correct=0;for(i=0;i<answer_id.length;i++){for(j=0;j<answer_id[i].length;j++){if(document.getElementById('answer_'+answer_id[i][j]).checked==true){document.getElementById('result_question_'+answer_id[i][j]).innerHTML=your_answer[0];}
-document.getElementById('answer_'+answer_id[i][j]).disabled=true;}}
-for(i=0;i<answer_correct.length;i++){if(document.getElementById('answer_'+answer_correct[i]).checked==true){document.getElementById('result_question_'+answer_correct[i]).innerHTML=your_answer[1];your_answer_correct++;}}
-if(question_count==your_answer_correct)
-var color='green';else
-var color='red';function DocumentGetClientSize(document_obj){var b=document_obj.body;var r=document_obj.documentElement;var w=b.clientWidth;var h;if(w<r.clientWidth)w=r.clientWidth;if(document_obj.compatMode=="BackCompat"){h=b.clientHeight;}else{if(r.clientHeight){h=r.clientHeight;}else{h=b.clientHeight;}}
-return{width:w,height:h};}
-function WindowGetScrollPosition(window_obj){if(window_obj.pageXOffset===undefined){}else if(window_obj.pageYOffset===undefined){}else{return{x:window_obj.pageXOffset,y:window_obj.pageYOffset};}
-var d=window_obj.document;return{x:(d.documentElement.scrollLeft||d.body.scrollLeft),y:(d.documentElement.scrollTop||d.body.scrollTop)};}
-function ElementSetTextContent(element,str){if(element.textContent!==undefined){element.textContent=str;}
-if(element.innerText!==undefined){element.innerText=str;}}
-function AlertDialog(){var _this=this;var _element_popup=null;var _element_bg=null;this.onclose=null;this.setMessage=function(str){var element_message=document.getElementById("alert_dialog_message");if(element_message){ElementSetTextContent(element_message,str);}};this.setWidth=function(width){var style=_element_popup.style;style.width=(width)+"px";};function update(){var style;var client_size=DocumentGetClientSize(document);var rect=_element_popup.getBoundingClientRect();var element_width=rect.right-rect.left;var element_height=rect.bottom-rect.top;var element_x=(client_size.width/2)-(element_width/2);var element_y=(client_size.height/2)-(element_height/2);var scroll_pos=WindowGetScrollPosition(window);element_x+=scroll_pos.x;element_y+=scroll_pos.y;style=_element_popup.style;style.left=(element_x)+"px";style.top=(element_y)+"px";style=_element_bg.style;style.left=(scroll_pos.x)+"px";style.top=(scroll_pos.y)+"px";style.width=(client_size.width)+"px";style.height=(client_size.height)+"px";}
-function release(){var parent;if(window.removeEventListener){window.removeEventListener("resize",update);window.removeEventListener("scroll",update);}else if(window.detachEvent){window.detachEvent("onresize",update);window.detachEvent("onscroll",update);}
-parent=_element_popup.parentNode;if(parent){parent.removeChild(_element_popup);}
-parent=_element_bg.parentNode;if(parent){parent.removeChild(_element_bg);}}
-(function(){var style;_element_bg=document.createElement("div");style=_element_bg.style;style.position="absolute";style.backgroundColor="#000";var opacity=0.5;style.opacity=opacity;style.filter="alpha(opacity="+(opacity*100)+")";document.body.appendChild(_element_bg);_element_popup=document.createElement("div");style=_element_popup.style;style.position="absolute";style.width="300px";style.backgroundColor="#F8FAFA";style.border="3px #5c90d2 solid";style.borderRadius="10px";style.boxShadow="5px 5px 10px #444";document.body.appendChild(_element_popup);_element_popup.innerHTML=''+'<div style="font-weight:bold; background:#5c90d2; color:#fff; padding:5px;">'+'	Kết Quả Làm Bài Trắc Nghiệm'+'</div>'+'<div id="alert_dialog_message" style="margin:10px; padding:20px; font-size:18px; background:#fff; border:1px solid #888;">'+'</div>'+'<div style="margin:10px;" align = "right">'+'<input type="button" id="alert_dialog_button" class ="btn btn-minw btn-danger" style="width:30%;" value="Đóng lại">'+'</div>';$(function(){$("input").keydown(function(e){if((e.which&&e.which===13)||(e.keyCode&&e.keyCode===13)||(e.which&&e.which===32)||(e.keyCode&&e.keyCode===32)){return false;}else{return true;}});});var element_button=document.getElementById("alert_dialog_button");element_button.onclick=function(){if(_this.onclose){_this.onclose();}
-release();};if(window.addEventListener){window.addEventListener("resize",update);window.addEventListener("scroll",update);}else if(window.attachEvent){window.attachEvent("onresize",update);window.attachEvent("onscroll",update);}
-update();})();}
-var alert_dialog=new AlertDialog();alert_dialog.setWidth(300);var ketqua='Bạn trả lời đúng: '+your_answer_correct+'/'+question_count+' câu';alert_dialog.setMessage(ketqua);alert_dialog.onclose=function(){console.log("Đã đóng lại");};}</script>
+<script src="media/jui/js/jquery.min.js" type="text/javascript"></script>
+<script src="media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+<script src="media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+</script>
+<div style="display: flex; gap: 10px;">
+	<a href="./home.html">Home</a>
+	<a href="./choukai-list.html">Nghe</a>
+</div>
+<style>
+	hr.style-two {
+		border: 0
+	}
+
+	hr.style-one {
+		border: 0;
+		height: 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+	}
+
+	#table_tracnghiem {
+		border: none
+	}
+
+	input[type="radio"] {
+		border: unset
+	}
+
+	input[type="radio"] {
+		-webkit-appearance: none;
+		width: 15px;
+		height: 15px;
+		border: 1px solid #19283C !important;
+		border-radius: 15px !important;
+		background: transparent;
+		opacity: 0.7;
+		margin-bottom: 6px
+	}
+
+	input[type="radio"]:checked {
+		background: #19283C;
+		opacity: 1
+	}
+
+	.bai_stt {
+		width: 40px;
+		padding: 5px 5px;
+		margin-bottom: 15px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		background-color: #5c90d2;
+		border-radius: 6px
+	}
+
+	table {
+		width: 100%
+	}
+</style>
+<div id="tracnghiemdiv">
+	<form class="quiz-form" method="post" action="#" name="post">
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問01:</div>
+				<font size="4" color="#0B0B61"><b>もみじ </b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr1">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_11" type="hidden" name="correct[1]">
+							<input id="answer_11" type="radio" name="answer[1]"><span style="font-size: 15px"> a.　Lá vàng </span><span
+								id="result_question_11"></span> <span id="result_correct_11"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr2">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_12" type="hidden" name="correct[1]">
+							<input id="answer_12" type="radio" name="answer[1]"><span style="font-size: 15px"> b.　Lá đỏ </span><span
+								id="result_question_12"></span> <span id="result_correct_12"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr3">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_13" type="hidden" name="correct[1]">
+							<input id="answer_13" type="radio" name="answer[1]"><span style="font-size: 15px"> c.　Lá khô </span><span
+								id="result_question_13"></span> <span id="result_correct_13"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr4">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_14" type="hidden" name="correct[1]">
+							<input id="answer_14" type="radio" name="answer[1]"><span style="font-size: 15px"> d.　Lá rụng </span><span
+								id="result_question_14"></span> <span id="result_correct_14"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問02:</div>
+				<font size="4" color="#0B0B61"><b>しけん </b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr5">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_21" type="hidden" name="correct[2]">
+							<input id="answer_21" type="radio" name="answer[2]"><span style="font-size: 15px"> a.　Kỳ thi, bài thi
+							</span><span id="result_question_21"></span> <span id="result_correct_21"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr6">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_22" type="hidden" name="correct[2]">
+							<input id="answer_22" type="radio" name="answer[2]"><span style="font-size: 15px"> b.　Thiên nhiên
+							</span><span id="result_question_22"></span> <span id="result_correct_22"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr7">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_23" type="hidden" name="correct[2]">
+							<input id="answer_23" type="radio" name="answer[2]"><span style="font-size: 15px"> c.　Công ty </span><span
+								id="result_question_23"></span> <span id="result_correct_23"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr8">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_24" type="hidden" name="correct[2]">
+							<input id="answer_24" type="radio" name="answer[2]"><span style="font-size: 15px"> d.　Cái ví </span><span
+								id="result_question_24"></span> <span id="result_correct_24"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問03:</div>
+				<font size="4" color="#0B0B61"><b>ホテル </b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr9">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_31" type="hidden" name="correct[3]">
+							<input id="answer_31" type="radio" name="answer[3]"><span style="font-size: 15px"> a.　Nhà hàng
+							</span><span id="result_question_31"></span> <span id="result_correct_31"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr10">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_32" type="hidden" name="correct[3]">
+							<input id="answer_32" type="radio" name="answer[3]"><span style="font-size: 15px"> b.　Công viên
+							</span><span id="result_question_32"></span> <span id="result_correct_32"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr11">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_33" type="hidden" name="correct[3]">
+							<input id="answer_33" type="radio" name="answer[3]"><span style="font-size: 15px"> c.　Khách sạn
+							</span><span id="result_question_33"></span> <span id="result_correct_33"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr12">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_34" type="hidden" name="correct[3]">
+							<input id="answer_34" type="radio" name="answer[3]"><span style="font-size: 15px"> d.　Sân vận động
+							</span><span id="result_question_34"></span> <span id="result_correct_34"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問04:</div>
+				<font size="4" color="#0B0B61"><b>くもり </b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr13">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_41" type="hidden" name="correct[4]">
+							<input id="answer_41" type="radio" name="answer[4]"><span style="font-size: 15px"> a.　Mây </span><span
+								id="result_question_41"></span> <span id="result_correct_41"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr14">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_42" type="hidden" name="correct[4]">
+							<input id="answer_42" type="radio" name="answer[4]"><span style="font-size: 15px"> b.　Mưa </span><span
+								id="result_question_42"></span> <span id="result_correct_42"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr15">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_43" type="hidden" name="correct[4]">
+							<input id="answer_43" type="radio" name="answer[4]"><span style="font-size: 15px"> c.　Bão </span><span
+								id="result_question_43"></span> <span id="result_correct_43"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr16">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_44" type="hidden" name="correct[4]">
+							<input id="answer_44" type="radio" name="answer[4]"><span style="font-size: 15px"> d.　Nắng </span><span
+								id="result_question_44"></span> <span id="result_correct_44"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問05:</div>
+				<font size="4" color="#0B0B61"><b>あたたかい</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr17">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_51" type="hidden" name="correct[5]">
+							<input id="answer_51" type="radio" name="answer[5]"><span style="font-size: 15px"> a.　Lạnh </span><span
+								id="result_question_51"></span> <span id="result_correct_51"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr18">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_52" type="hidden" name="correct[5]">
+							<input id="answer_52" type="radio" name="answer[5]"><span style="font-size: 15px"> b.　Ấm </span><span
+								id="result_question_52"></span> <span id="result_correct_52"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr19">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_53" type="hidden" name="correct[5]">
+							<input id="answer_53" type="radio" name="answer[5]"><span style="font-size: 15px"> c.　Nóng </span><span
+								id="result_question_53"></span> <span id="result_correct_53"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr20">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_54" type="hidden" name="correct[5]">
+							<input id="answer_54" type="radio" name="answer[5]"><span style="font-size: 15px"> d.　Dễ chịu </span><span
+								id="result_question_54"></span> <span id="result_correct_54"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問06:</div>
+				<font size="4" color="#0B0B61"><b>Gần</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr21">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_61" type="hidden" name="correct[6]">
+							<input id="answer_61" type="radio" name="answer[6]"><span style="font-size: 15px"> a.　ちがい </span><span
+								id="result_question_61"></span> <span id="result_correct_61"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr22">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_62" type="hidden" name="correct[6]">
+							<input id="answer_62" type="radio" name="answer[6]"><span style="font-size: 15px"> b.　ちかい </span><span
+								id="result_question_62"></span> <span id="result_correct_62"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr23">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_63" type="hidden" name="correct[6]">
+							<input id="answer_63" type="radio" name="answer[6]"><span style="font-size: 15px"> c.　とおい </span><span
+								id="result_question_63"></span> <span id="result_correct_63"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr24">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_64" type="hidden" name="correct[6]">
+							<input id="answer_64" type="radio" name="answer[6]"><span style="font-size: 15px"> d.　とうおい </span><span
+								id="result_question_64"></span> <span id="result_correct_64"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問07:</div>
+				<font size="4" color="#0B0B61"><b>Mùa</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr25">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_71" type="hidden" name="correct[7]">
+							<input id="answer_71" type="radio" name="answer[7]"><span style="font-size: 15px"> a.　きげつ </span><span
+								id="result_question_71"></span> <span id="result_correct_71"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr26">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_72" type="hidden" name="correct[7]">
+							<input id="answer_72" type="radio" name="answer[7]"><span style="font-size: 15px">
+								b.　きせつ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</span><span id="result_question_72"></span> <span id="result_correct_72"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr27">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_73" type="hidden" name="correct[7]">
+							<input id="answer_73" type="radio" name="answer[7]"><span style="font-size: 15px"> c.　きせい </span><span
+								id="result_question_73"></span> <span id="result_correct_73"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr28">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_74" type="hidden" name="correct[7]">
+							<input id="answer_74" type="radio" name="answer[7]"><span style="font-size: 15px"> d.　きぜつ </span><span
+								id="result_question_74"></span> <span id="result_correct_74"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問08:</div>
+				<font size="4" color="#0B0B61"><b>Nặng </b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr29">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_81" type="hidden" name="correct[8]">
+							<input id="answer_81" type="radio" name="answer[8]"><span style="font-size: 15px">
+								a.　おもい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_81"></span> <span
+								id="result_correct_81"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr30">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_82" type="hidden" name="correct[8]">
+							<input id="answer_82" type="radio" name="answer[8]"><span style="font-size: 15px"> b.　かるい </span><span
+								id="result_question_82"></span> <span id="result_correct_82"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr31">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_83" type="hidden" name="correct[8]">
+							<input id="answer_83" type="radio" name="answer[8]"><span style="font-size: 15px"> c.　おおもい </span><span
+								id="result_question_83"></span> <span id="result_correct_83"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr32">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_84" type="hidden" name="correct[8]">
+							<input id="answer_84" type="radio" name="answer[8]"><span style="font-size: 15px"> d.　かるいい </span><span
+								id="result_question_84"></span> <span id="result_correct_84"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問09:</div>
+				<font size="4" color="#0B0B61"><b>Ngọt</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr33">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_91" type="hidden" name="correct[9]">
+							<input id="answer_91" type="radio" name="answer[9]"><span style="font-size: 15px"> a.　しっぱい </span><span
+								id="result_question_91"></span> <span id="result_correct_91"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr34">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_92" type="hidden" name="correct[9]">
+							<input id="answer_92" type="radio" name="answer[9]"><span style="font-size: 15px"> b.　にがい </span><span
+								id="result_question_92"></span> <span id="result_correct_92"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr35">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_93" type="hidden" name="correct[9]">
+							<input id="answer_93" type="radio" name="answer[9]"><span style="font-size: 15px"> c.　からい </span><span
+								id="result_question_93"></span> <span id="result_correct_93"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr36">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_94" type="hidden" name="correct[9]">
+							<input id="answer_94" type="radio" name="answer[9]"><span style="font-size: 15px">
+								d.　あまい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_94"></span> <span
+								id="result_correct_94"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問10:</div>
+				<font size="4" color="#0B0B61"><b>Món hải sản và rau chiên tẩm bột</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr37">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_101" type="hidden" name="correct[10]">
+							<input id="answer_101" type="radio" name="answer[10]"><span style="font-size: 15px"> a.　すぶた </span><span
+								id="result_question_101"></span> <span id="result_correct_101"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr38">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_102" type="hidden" name="correct[10]">
+							<input id="answer_102" type="radio" name="answer[10]"><span style="font-size: 15px"> b.　すきやき </span><span
+								id="result_question_102"></span> <span id="result_correct_102"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr39">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_103" type="hidden" name="correct[10]">
+							<input id="answer_103" type="radio" name="answer[10]"><span style="font-size: 15px"> c.　てんぶら </span><span
+								id="result_question_103"></span> <span id="result_correct_103"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr40">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_104" type="hidden" name="correct[10]">
+							<input id="answer_104" type="radio" name="answer[10]"><span style="font-size: 15px"> d.　てんぷら </span><span
+								id="result_question_104"></span> <span id="result_correct_104"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問11:</div>
+				<font size="4" color="#0B0B61"><b>まつり</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr41">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_111" type="hidden" name="correct[11]">
+							<input id="answer_111" type="radio" name="answer[11]"><span style="font-size: 15px"> a.　祭り </span><span
+								id="result_question_111"></span> <span id="result_correct_111"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr42">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_112" type="hidden" name="correct[11]">
+							<input id="answer_112" type="radio" name="answer[11]"><span style="font-size: 15px"> b.　発り </span><span
+								id="result_question_112"></span> <span id="result_correct_112"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr43">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_113" type="hidden" name="correct[11]">
+							<input id="answer_113" type="radio" name="answer[11]"><span style="font-size: 15px"> c.　察り </span><span
+								id="result_question_113"></span> <span id="result_correct_113"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr44">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_114" type="hidden" name="correct[11]">
+							<input id="answer_114" type="radio" name="answer[11]"><span style="font-size: 15px"> d.　際り </span><span
+								id="result_question_114"></span> <span id="result_correct_114"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問12:</div>
+				<font size="4" color="#0B0B61"><b>ふゆ</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr45">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_121" type="hidden" name="correct[12]">
+							<input id="answer_121" type="radio" name="answer[12]"><span style="font-size: 15px"> a.　春 </span><span
+								id="result_question_121"></span> <span id="result_correct_121"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr46">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_122" type="hidden" name="correct[12]">
+							<input id="answer_122" type="radio" name="answer[12]"><span style="font-size: 15px"> b.　冬 </span><span
+								id="result_question_122"></span> <span id="result_correct_122"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr47">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_123" type="hidden" name="correct[12]">
+							<input id="answer_123" type="radio" name="answer[12]"><span style="font-size: 15px"> c.　秋 </span><span
+								id="result_question_123"></span> <span id="result_correct_123"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr48">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_124" type="hidden" name="correct[12]">
+							<input id="answer_124" type="radio" name="answer[12]"><span style="font-size: 15px"> d.　夏 </span><span
+								id="result_question_124"></span> <span id="result_correct_124"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問13:</div>
+				<font size="4" color="#0B0B61"><b>はやい</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr49">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_131" type="hidden" name="correct[13]">
+							<input id="answer_131" type="radio" name="answer[13]"><span style="font-size: 15px"> a.　速い </span><span
+								id="result_question_131"></span> <span id="result_correct_131"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr50">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_132" type="hidden" name="correct[13]">
+							<input id="answer_132" type="radio" name="answer[13]"><span style="font-size: 15px"> b.　遅い </span><span
+								id="result_question_132"></span> <span id="result_correct_132"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr51">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_133" type="hidden" name="correct[13]">
+							<input id="answer_133" type="radio" name="answer[13]"><span style="font-size: 15px"> c.　束い </span><span
+								id="result_question_133"></span> <span id="result_correct_133"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr52">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_134" type="hidden" name="correct[13]">
+							<input id="answer_134" type="radio" name="answer[13]"><span style="font-size: 15px"> d.　高い </span><span
+								id="result_question_134"></span> <span id="result_correct_134"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問14:</div>
+				<font size="4" color="#0B0B61"><b>うみ</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr53">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_141" type="hidden" name="correct[14]">
+							<input id="answer_141" type="radio" name="answer[14]"><span style="font-size: 15px"> a.　毎 </span><span
+								id="result_question_141"></span> <span id="result_correct_141"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr54">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_142" type="hidden" name="correct[14]">
+							<input id="answer_142" type="radio" name="answer[14]"><span style="font-size: 15px"> b.　晦 </span><span
+								id="result_question_142"></span> <span id="result_correct_142"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr55">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_143" type="hidden" name="correct[14]">
+							<input id="answer_143" type="radio" name="answer[14]"><span style="font-size: 15px"> c.　湖 </span><span
+								id="result_question_143"></span> <span id="result_correct_143"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr56">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_144" type="hidden" name="correct[14]">
+							<input id="answer_144" type="radio" name="answer[14]"><span style="font-size: 15px"> d.　海 </span><span
+								id="result_question_144"></span> <span id="result_correct_144"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問15:</div>
+				<font size="4" color="#0B0B61"><b>かるい </b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr57">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_151" type="hidden" name="correct[15]">
+							<input id="answer_151" type="radio" name="answer[15]"><span style="font-size: 15px"> a.　転い </span><span
+								id="result_question_151"></span> <span id="result_correct_151"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr58">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_152" type="hidden" name="correct[15]">
+							<input id="answer_152" type="radio" name="answer[15]"><span style="font-size: 15px"> b.　連い </span><span
+								id="result_question_152"></span> <span id="result_correct_152"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr59">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_153" type="hidden" name="correct[15]">
+							<input id="answer_153" type="radio" name="answer[15]"><span style="font-size: 15px"> c.　軽い </span><span
+								id="result_question_153"></span> <span id="result_correct_153"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr60">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_154" type="hidden" name="correct[15]">
+							<input id="answer_154" type="radio" name="answer[15]"><span style="font-size: 15px"> d.　塩い </span><span
+								id="result_question_154"></span> <span id="result_correct_154"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問16:</div>
+				<font size="4" color="#0B0B61"><b>空港</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr61">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_161" type="hidden" name="correct[16]">
+							<input id="answer_161" type="radio" name="answer[16]"><span style="font-size: 15px"> a.　くこう </span><span
+								id="result_question_161"></span> <span id="result_correct_161"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr62">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_162" type="hidden" name="correct[16]">
+							<input id="answer_162" type="radio" name="answer[16]"><span style="font-size: 15px"> b.　くうこ </span><span
+								id="result_question_162"></span> <span id="result_correct_162"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr63">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_163" type="hidden" name="correct[16]">
+							<input id="answer_163" type="radio" name="answer[16]"><span style="font-size: 15px"> c.　こうくう </span><span
+								id="result_question_163"></span> <span id="result_correct_163"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr64">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_164" type="hidden" name="correct[16]">
+							<input id="answer_164" type="radio" name="answer[16]"><span style="font-size: 15px"> d.　くうこう </span><span
+								id="result_question_164"></span> <span id="result_correct_164"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問17:</div>
+				<font size="4" color="#0B0B61"><b>夏</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr65">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_171" type="hidden" name="correct[17]">
+							<input id="answer_171" type="radio" name="answer[17]"><span style="font-size: 15px"> a.　なつ </span><span
+								id="result_question_171"></span> <span id="result_correct_171"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr66">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_172" type="hidden" name="correct[17]">
+							<input id="answer_172" type="radio" name="answer[17]"><span style="font-size: 15px"> b.　はる </span><span
+								id="result_question_172"></span> <span id="result_correct_172"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr67">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_173" type="hidden" name="correct[17]">
+							<input id="answer_173" type="radio" name="answer[17]"><span style="font-size: 15px"> c.　あき </span><span
+								id="result_question_173"></span> <span id="result_correct_173"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr68">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_174" type="hidden" name="correct[17]">
+							<input id="answer_174" type="radio" name="answer[17]"><span style="font-size: 15px"> d.　ふゆ </span><span
+								id="result_question_174"></span> <span id="result_correct_174"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問18:</div>
+				<font size="4" color="#0B0B61"><b>世界</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr69">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_181" type="hidden" name="correct[18]">
+							<input id="answer_181" type="radio" name="answer[18]"><span style="font-size: 15px"> a.　せかく </span><span
+								id="result_question_181"></span> <span id="result_correct_181"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr70">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_182" type="hidden" name="correct[18]">
+							<input id="answer_182" type="radio" name="answer[18]"><span style="font-size: 15px"> b.　かせい </span><span
+								id="result_question_182"></span> <span id="result_correct_182"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr71">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_183" type="hidden" name="correct[18]">
+							<input id="answer_183" type="radio" name="answer[18]"><span style="font-size: 15px">
+								c.　せかい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_183"></span> <span
+								id="result_correct_183"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr72">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_184" type="hidden" name="correct[18]">
+							<input id="answer_184" type="radio" name="answer[18]"><span style="font-size: 15px"> d.　せいかい </span><span
+								id="result_question_184"></span> <span id="result_correct_184"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問19:</div>
+				<font size="4" color="#0B0B61"><b>多い</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr73">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_191" type="hidden" name="correct[19]">
+							<input id="answer_191" type="radio" name="answer[19]"><span style="font-size: 15px"> a.　あおい </span><span
+								id="result_question_191"></span> <span id="result_correct_191"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr74">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_192" type="hidden" name="correct[19]">
+							<input id="answer_192" type="radio" name="answer[19]"><span style="font-size: 15px"> b.　おいい </span><span
+								id="result_question_192"></span> <span id="result_correct_192"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr75">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_193" type="hidden" name="correct[19]">
+							<input id="answer_193" type="radio" name="answer[19]"><span style="font-size: 15px"> c.　おい </span><span
+								id="result_question_193"></span> <span id="result_correct_193"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr76">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_194" type="hidden" name="correct[19]">
+							<input id="answer_194" type="radio" name="answer[19]"><span style="font-size: 15px">
+								d.　おおい&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span id="result_question_194"></span> <span
+								id="result_correct_194"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問20:</div>
+				<font size="4" color="#0B0B61"><b>雪</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr77">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_201" type="hidden" name="correct[20]">
+							<input id="answer_201" type="radio" name="answer[20]"><span style="font-size: 15px"> a.　ゆきい </span><span
+								id="result_question_201"></span> <span id="result_correct_201"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr78">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_202" type="hidden" name="correct[20]">
+							<input id="answer_202" type="radio" name="answer[20]"><span style="font-size: 15px"> b.　ゆうき </span><span
+								id="result_question_202"></span> <span id="result_correct_202"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr79">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_203" type="hidden" name="correct[20]">
+							<input id="answer_203" type="radio" name="answer[20]"><span style="font-size: 15px"> c.　ゆき </span><span
+								id="result_question_203"></span> <span id="result_correct_203"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr80">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_204" type="hidden" name="correct[20]">
+							<input id="answer_204" type="radio" name="answer[20]"><span style="font-size: 15px"> d.　ゆぎ </span><span
+								id="result_question_204"></span> <span id="result_correct_204"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問21:</div>
+				<font size="4" color="#0B0B61"><b>きのうは<ruby>雨<rp>（</rp>
+							<rt>あめ</rt>
+							<rp>）</rp>
+						</ruby>（　）。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr81">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_211" type="hidden" name="correct[21]">
+							<input id="answer_211" type="radio" name="answer[21]"><span style="font-size: 15px"> a.　かったです </span><span
+								id="result_question_211"></span> <span id="result_correct_211"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr82">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_212" type="hidden" name="correct[21]">
+							<input id="answer_212" type="radio" name="answer[21]"><span style="font-size: 15px"> b.　でした </span><span
+								id="result_question_212"></span> <span id="result_correct_212"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問22:</div>
+				<font size="4" color="#0B0B61"><b>きのうのパーティーは（　）です。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr83">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_221" type="hidden" name="correct[22]">
+							<input id="answer_221" type="radio" name="answer[22]"><span style="font-size: 15px"> a.　おもしろいかった
+							</span><span id="result_question_221"></span> <span id="result_correct_221"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr84">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_222" type="hidden" name="correct[22]">
+							<input id="answer_222" type="radio" name="answer[22]"><span style="font-size: 15px"> b.　おもしろかった
+							</span><span id="result_question_222"></span> <span id="result_correct_222"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問23:</div>
+				<font size="4" color="#0B0B61"><b><ruby>夏<rp>（</rp>
+							<rt>なつ</rt>
+							<rp>）</rp>
+						</ruby>と<ruby>冬<rp>（</rp>
+							<rt>ふゆ</rt>
+							<rp>）</rp>
+						</ruby>と（　）が<ruby>好<rp>（</rp>
+							<rt>す</rt>
+							<rp>）</rp>
+						</ruby>きですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr85">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_231" type="hidden" name="correct[23]">
+							<input id="answer_231" type="radio" name="answer[23]"><span style="font-size: 15px"> a.　いつ </span><span
+								id="result_question_231"></span> <span id="result_correct_231"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr86">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_232" type="hidden" name="correct[23]">
+							<input id="answer_232" type="radio" name="answer[23]"><span style="font-size: 15px"> b.　どちら </span><span
+								id="result_question_232"></span> <span id="result_correct_232"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問24:</div>
+				<font size="4" color="#0B0B61"><b>ホンコンとシンガポールと（　）が<ruby>暖<rp>（</rp>
+							<rt>あたた</rt>
+							<rp>）</rp>
+						</ruby>かいですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr87">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_241" type="hidden" name="correct[24]">
+							<input id="answer_241" type="radio" name="answer[24]"><span style="font-size: 15px"> a.　どちら </span><span
+								id="result_question_241"></span> <span id="result_correct_241"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr88">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_242" type="hidden" name="correct[24]">
+							<input id="answer_242" type="radio" name="answer[24]"><span style="font-size: 15px"> b.　なに </span><span
+								id="result_question_242"></span> <span id="result_correct_242"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問25:</div>
+				<font size="4" color="#0B0B61"><b><ruby>世界<rp>（</rp>
+							<rt>せかい</rt>
+							<rp>）</rp>
+						</ruby>で（　）がいちばん<ruby>人<rp>（</rp>
+							<rt>ひと</rt>
+							<rp>）</rp>
+						</ruby>が<ruby>多<rp>（</rp>
+							<rt>おお</rt>
+							<rp>）</rp>
+						</ruby>いですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr89">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_251" type="hidden" name="correct[25]">
+							<input id="answer_251" type="radio" name="answer[25]"><span style="font-size: 15px"> a.　なに </span><span
+								id="result_question_251"></span> <span id="result_correct_251"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr90">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_252" type="hidden" name="correct[25]">
+							<input id="answer_252" type="radio" name="answer[25]"><span style="font-size: 15px"> b.　どこ </span><span
+								id="result_question_252"></span> <span id="result_correct_252"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問26:</div>
+				<font size="4" color="#0B0B61"><b><ruby>中国<rp>（</rp>
+							<rt>ちゅうごく</rt>
+							<rp>）</rp>
+						</ruby>は<ruby>日本<rp>（</rp>
+							<rt>にほん</rt>
+							<rp>）</rp>
+						</ruby>（　）<ruby>大<rp>（</rp>
+							<rt>おお</rt>
+							<rp>）</rp>
+						</ruby>きいです。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr91">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_261" type="hidden" name="correct[26]">
+							<input id="answer_261" type="radio" name="answer[26]"><span style="font-size: 15px"> a.　より </span><span
+								id="result_question_261"></span> <span id="result_correct_261"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr92">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_262" type="hidden" name="correct[26]">
+							<input id="answer_262" type="radio" name="answer[26]"><span style="font-size: 15px"> b.　ほう </span><span
+								id="result_question_262"></span> <span id="result_correct_262"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問27:</div>
+				<font size="4" color="#0B0B61"><b>A: コーヒーと<ruby>紅茶<rp>（</rp>
+							<rt>こうちゃ</rt>
+							<rp>）</rp>
+						</ruby>とどちらが<ruby>好<rp>（</rp>
+							<rt>す</rt>
+							<rp>）</rp>
+						</ruby>きですか。<p> B:（　）<ruby>好<rp>（</rp>
+								<rt>す</rt>
+								<rp>）</rp>
+							</ruby>きです。</p></b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr93">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_271" type="hidden" name="correct[27]">
+							<input id="answer_271" type="radio" name="answer[27]"><span style="font-size: 15px"> a.　どちらも </span><span
+								id="result_question_271"></span> <span id="result_correct_271"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr94">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_272" type="hidden" name="correct[27]">
+							<input id="answer_272" type="radio" name="answer[27]"><span style="font-size: 15px"> b.　どちらが </span><span
+								id="result_question_272"></span> <span id="result_correct_272"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問28:</div>
+				<font size="4" color="#0B0B61"><b>A: <ruby>海<rp>（</rp>
+							<rt>うみ</rt>
+							<rp>）</rp>
+						</ruby>と<ruby>山<rp>（</rp>
+							<rt>やま</rt>
+							<rp>）</rp>
+						</ruby>（　）どちらが<ruby>好<rp>（</rp>
+							<rt>す</rt>
+							<rp>）</rp>
+						</ruby>きですか。<p>B: <ruby>海<rp>（</rp>
+								<rt>うみ</rt>
+								<rp>）</rp>
+							</ruby>のほうが<ruby>好<rp>（</rp>
+								<rt>す</rt>
+								<rp>）</rp>
+							</ruby>きです。</p></b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr95">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_281" type="hidden" name="correct[28]">
+							<input id="answer_281" type="radio" name="answer[28]"><span style="font-size: 15px"> a.　と </span><span
+								id="result_question_281"></span> <span id="result_correct_281"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr96">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_282" type="hidden" name="correct[28]">
+							<input id="answer_282" type="radio" name="answer[28]"><span style="font-size: 15px"> b.　も </span><span
+								id="result_question_282"></span> <span id="result_correct_282"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<font size="4" color="#0B0B61"><b>この<ruby>教室<rp>（</rp>
+					<rt>きょうしつ</rt>
+					<rp>）</rp>
+				</ruby>（１）だれ（２）いちばん<ruby>元気<rp>（</rp>
+					<rt>げんき</rt>
+					<rp>）</rp>
+				</ruby>ですか。</b></font>
+		<hr class="style-two">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問29:</div>
+				<font size="4" color="#0B0B61"><b>(1)</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr97">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_291" type="hidden" name="correct[29]">
+							<input id="answer_291" type="radio" name="answer[29]"><span style="font-size: 15px"> a.　で </span><span
+								id="result_question_291"></span> <span id="result_correct_291"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr98">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_292" type="hidden" name="correct[29]">
+							<input id="answer_292" type="radio" name="answer[29]"><span style="font-size: 15px"> b.　に </span><span
+								id="result_question_292"></span> <span id="result_correct_292"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-two">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問30:</div>
+				<font size="4" color="#0B0B61"><b>(2)</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr99">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_301" type="hidden" name="correct[30]">
+							<input id="answer_301" type="radio" name="answer[30]"><span style="font-size: 15px"> a.　を </span><span
+								id="result_question_301"></span> <span id="result_correct_301"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr100">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_302" type="hidden" name="correct[30]">
+							<input id="answer_302" type="radio" name="answer[30]"><span style="font-size: 15px"> b.　が </span><span
+								id="result_question_302"></span> <span id="result_correct_302"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問31:</div>
+				<font size="4" color="#0B0B61"><b><ruby>地下鉄<rp>（</rp>
+							<rt>ちかてつ</rt>
+							<rp>）</rp>
+						</ruby>（　）タクシー（　）<ruby>安<rp>（</rp>
+							<rt>やす</rt>
+							<rp>）</rp>
+						</ruby>いです。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr101">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_311" type="hidden" name="correct[31]">
+							<input id="answer_311" type="radio" name="answer[31]"><span style="font-size: 15px"> a.　は、より </span><span
+								id="result_question_311"></span> <span id="result_correct_311"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr102">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_312" type="hidden" name="correct[31]">
+							<input id="answer_312" type="radio" name="answer[31]"><span style="font-size: 15px"> b.　ほうが、が </span><span
+								id="result_question_312"></span> <span id="result_correct_312"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問32:</div>
+				<font size="4" color="#0B0B61"><b><ruby>暑<rp>（</rp>
+							<rt>あつ</rt>
+							<rp>）</rp>
+						</ruby>い<ruby>季節<rp>（</rp>
+							<rt>きせつ</rt>
+							<rp>）</rp>
+						</ruby>（　）<ruby>寒<rp>（</rp>
+							<rt>さむ</rt>
+							<rp>）</rp>
+						</ruby>い<ruby>季節<rp>（</rp>
+							<rt>きせつ</rt>
+							<rp>）</rp>
+						</ruby>（　）どちら（　）いいですか。<p>…<ruby>暑<rp>（</rp>
+								<rt>あつ</rt>
+								<rp>）</rp>
+							</ruby>い<ruby>季節<rp>（</rp>
+								<rt>きせつ</rt>
+								<rp>）</rp>
+							</ruby>（　）ほう（　）いいです。</p></b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr103">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_321" type="hidden" name="correct[32]">
+							<input id="answer_321" type="radio" name="answer[32]"><span style="font-size: 15px"> a.　に、に、が、と、が
+							</span><span id="result_question_321"></span> <span id="result_correct_321"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr104">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_322" type="hidden" name="correct[32]">
+							<input id="answer_322" type="radio" name="answer[32]"><span style="font-size: 15px"> b.　と、と、が、の、が
+							</span><span id="result_question_322"></span> <span id="result_correct_322"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問33:</div>
+				<font size="4" color="#0B0B61"><b>１<ruby>年<rp>（</rp>
+							<rt>ねん</rt>
+							<rp>）</rp>
+						</ruby>（　）<ruby>何月<rp>（</rp>
+							<rt>なんがつ</rt>
+							<rp>）</rp>
+						</ruby>（　）いちばん<ruby>雨<rp>（</rp>
+							<rt>あめ</rt>
+							<rp>）</rp>
+						</ruby>（　）<ruby>多<rp>（</rp>
+							<rt>おお</rt>
+							<rp>）</rp>
+						</ruby>いですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr105">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_331" type="hidden" name="correct[33]">
+							<input id="answer_331" type="radio" name="answer[33]"><span style="font-size: 15px"> a.　と、と、が </span><span
+								id="result_question_331"></span> <span id="result_correct_331"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr106">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_332" type="hidden" name="correct[33]">
+							<input id="answer_332" type="radio" name="answer[33]"><span style="font-size: 15px"> b.　で、が、が </span><span
+								id="result_question_332"></span> <span id="result_correct_332"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問34:</div>
+				<font size="4" color="#0B0B61"><b><ruby>桜<rp>（</rp>
+							<rt>さくら</rt>
+							<rp>）</rp>
+						</ruby>（　）<ruby>日本<rp>（</rp>
+							<rt>にほん</rt>
+							<rp>）</rp>
+						</ruby>の<ruby>花<rp>（</rp>
+							<rt>はな</rt>
+							<rp>）</rp>
+						</ruby>（　）いちばん<ruby>有名<rp>（</rp>
+							<rt>ゆうめい</rt>
+							<rp>）</rp>
+						</ruby>です。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr107">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_341" type="hidden" name="correct[34]">
+							<input id="answer_341" type="radio" name="answer[34]"><span style="font-size: 15px"> a.　は、で </span><span
+								id="result_question_341"></span> <span id="result_correct_341"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr108">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_342" type="hidden" name="correct[34]">
+							<input id="answer_342" type="radio" name="answer[34]"><span style="font-size: 15px"> b.　に、で </span><span
+								id="result_question_342"></span> <span id="result_correct_342"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問35:</div>
+				<font size="4" color="#0B0B61"><b><ruby>松本<rp>（</rp>
+							<rt>まつもと</rt>
+							<rp>）</rp>
+						</ruby>さん（　）<ruby>山田<rp>（</rp>
+							<rt>やまだ</rt>
+							<rp>）</rp>
+						</ruby>さん（　）どちら（　）ダンス（　）<ruby>上手<rp>（</rp>
+							<rt>じょうず</rt>
+							<rp>）</rp>
+						</ruby>ですか。<p> …どちら（　）<ruby>上手<rp>（</rp>
+								<rt>じょうず</rt>
+								<rp>）</rp>
+							</ruby>です。</p></b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr109">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_351" type="hidden" name="correct[35]">
+							<input id="answer_351" type="radio" name="answer[35]"><span style="font-size: 15px"> a.　と、と、が、が、も
+							</span><span id="result_question_351"></span> <span id="result_correct_351"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr110">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_352" type="hidden" name="correct[35]">
+							<input id="answer_352" type="radio" name="answer[35]"><span style="font-size: 15px"> b.　と、に、は、が、も
+							</span><span id="result_question_352"></span> <span id="result_correct_352"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問36:</div>
+				<font size="4" color="#0B0B61"><b><ruby>飛行機<rp>（</rp>
+							<rt>ひこうき</rt>
+							<rp>）</rp>
+						</ruby>と<ruby>新幹線<rp>（</rp>
+							<rt>しんかんせん</rt>
+							<rp>）</rp>
+						</ruby>と（　）が<ruby>早<rp>（</rp>
+							<rt>はや</rt>
+							<rp>）</rp>
+						</ruby>いですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr111">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_361" type="hidden" name="correct[36]">
+							<input id="answer_361" type="radio" name="answer[36]"><span style="font-size: 15px"> a.　どちら </span><span
+								id="result_question_361"></span> <span id="result_correct_361"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr112">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_362" type="hidden" name="correct[36]">
+							<input id="answer_362" type="radio" name="answer[36]"><span style="font-size: 15px"> b.　どこ </span><span
+								id="result_question_362"></span> <span id="result_correct_362"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問37:</div>
+				<font size="4" color="#0B0B61"><b>スポーツで（　）がいちばんおもしろいですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr113">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_371" type="hidden" name="correct[37]">
+							<input id="answer_371" type="radio" name="answer[37]"><span style="font-size: 15px"> a.　どう </span><span
+								id="result_question_371"></span> <span id="result_correct_371"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr114">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_372" type="hidden" name="correct[37]">
+							<input id="answer_372" type="radio" name="answer[37]"><span style="font-size: 15px"> b.　なに </span><span
+								id="result_question_372"></span> <span id="result_correct_372"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問38:</div>
+				<font size="4" color="#0B0B61"><b><ruby>京都<rp>（</rp>
+							<rt>きょうと</rt>
+							<rp>）</rp>
+						</ruby><ruby>旅行<rp>（</rp>
+							<rt>りょこう</rt>
+							<rp>）</rp>
+						</ruby>は（　）でしたか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr115">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_381" type="hidden" name="correct[38]">
+							<input id="answer_381" type="radio" name="answer[38]"><span style="font-size: 15px"> a.　どこ </span><span
+								id="result_question_381"></span> <span id="result_correct_381"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr116">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_382" type="hidden" name="correct[38]">
+							<input id="answer_382" type="radio" name="answer[38]"><span style="font-size: 15px"> b.　どう </span><span
+								id="result_question_382"></span> <span id="result_correct_382"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問39:</div>
+				<font size="4" color="#0B0B61"><b><ruby>来年<rp>（</rp>
+							<rt>らいねん</rt>
+							<rp>）</rp>
+						</ruby>タイへ<ruby>行<rp>（</rp>
+							<rt>い</rt>
+							<rp>）</rp>
+						</ruby>きます。（　）がいちばんいい<ruby>季節<rp>（</rp>
+							<rt>きせつ</rt>
+							<rp>）</rp>
+						</ruby>ですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr117">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_391" type="hidden" name="correct[39]">
+							<input id="answer_391" type="radio" name="answer[39]"><span style="font-size: 15px"> a.　いつ </span><span
+								id="result_question_391"></span> <span id="result_correct_391"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr118">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_392" type="hidden" name="correct[39]">
+							<input id="answer_392" type="radio" name="answer[39]"><span style="font-size: 15px"> b.　なに </span><span
+								id="result_question_392"></span> <span id="result_correct_392"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one">
+		<div class="tracnghiem">
+			<div id="question">
+				<div class="bai_stt">問40:</div>
+				<font size="4" color="#0B0B61"><b><ruby>東京<rp>(</rp>
+							<rt>とうきょう</rt>
+							<rp>)</rp>
+						</ruby>の<ruby>本屋<rp>(</rp>
+							<rt>ほんや</rt>
+							<rp>)</rp>
+						</ruby>で（　）がいちばん<ruby>本<rp>(</rp>
+							<rt>ほん</rt>
+							<rp>)</rp>
+						</ruby>が<ruby>多<rp>(</rp>
+							<rt>おお</rt>
+							<rp>)</rp>
+						</ruby>いですか。</b></font>
+			</div>
+			<table id="table_tracnghiem">
+				<tbody>
+					<tr id="table_tracnghiem" class="tr119">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_401" type="hidden" name="correct[40]">
+							<input id="answer_401" type="radio" name="answer[40]"><span style="font-size: 15px"> a.　どれ </span><span
+								id="result_question_401"></span> <span id="result_correct_401"></span>
+						</td>
+					</tr>
+					<tr id="table_tracnghiem" class="tr120">
+						<td id="table_tracnghiem" class="item1"><input id="answer_correct_402" type="hidden" name="correct[40]">
+							<input id="answer_402" type="radio" name="answer[40]"><span style="font-size: 15px"> b.　どこ </span><span
+								id="result_question_402"></span> <span id="result_correct_402"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr class="style-one"><input type="button" value="Kết Quả" onclick="check_result();" class="btn btn-danger"
+			id="ketqua">
+		<input type="button" value="Làm Lại" onclick="reset_result();" class="btn btn-success" id="lamlai">
+		<input type="button" value="Đáp Án" onclick="result_correct();" class="btn btn-primary" id="dapan"
+			data-toggle="tooltip" title="" data-original-title="Bạn chỉ xem được đáp án khi làm đúng từ 60% trở lên">
+	</form>
+</div>
+<script type="text/javascript">var question_count = 30;</script>
+<script type="text/javascript">var answer_id = new Array(); var answer_correct = new Array(); var your_answer = new Array('<i style="color: red; display: inline-block;">&#10008;</i>', '<i style="color: green; display: inline-block;">&#10004;</i>'); answer_id[0] = new Array(11, 12, 13, 14); answer_correct[0] = 12; answer_id[1] = new Array(21, 22, 23, 24); answer_correct[1] = 21; answer_id[2] = new Array(31, 32, 33, 34); answer_correct[2] = 33; answer_id[3] = new Array(41, 42, 43, 44); answer_correct[3] = 41; answer_id[4] = new Array(51, 52, 53, 54); answer_correct[4] = 53; answer_id[5] = new Array(61, 62, 63, 64); answer_correct[5] = 62; answer_id[6] = new Array(71, 72, 73, 74); answer_correct[6] = 72; answer_id[7] = new Array(81, 82, 83, 84); answer_correct[7] = 81; answer_id[8] = new Array(91, 92, 93, 94); answer_correct[8] = 94; answer_id[9] = new Array(101, 102, 103, 104); answer_correct[9] = 104; answer_id[10] = new Array(111, 112, 113, 114); answer_correct[10] = 111; answer_id[11] = new Array(121, 122, 123, 124); answer_correct[11] = 122; answer_id[12] = new Array(131, 132, 133, 134); answer_correct[12] = 131; answer_id[13] = new Array(141, 142, 143, 144); answer_correct[13] = 144; answer_id[14] = new Array(151, 152, 153, 154); answer_correct[14] = 153; answer_id[15] = new Array(161, 162, 163, 164); answer_correct[15] = 164; answer_id[16] = new Array(171, 172, 173, 174); answer_correct[16] = 171; answer_id[17] = new Array(181, 182, 183, 184); answer_correct[17] = 183; answer_id[18] = new Array(191, 192, 193, 194); answer_correct[18] = 194; answer_id[19] = new Array(201, 202, 203, 204); answer_correct[19] = 203; answer_id[20] = new Array(211, 212); answer_correct[20] = 212; answer_id[21] = new Array(221, 222); answer_correct[21] = 222; answer_id[22] = new Array(231, 232); answer_correct[22] = 232; answer_id[23] = new Array(241, 242); answer_correct[23] = 241; answer_id[24] = new Array(251, 252); answer_correct[24] = 252; answer_id[25] = new Array(261, 262); answer_correct[25] = 261; answer_id[26] = new Array(271, 272); answer_correct[26] = 271; answer_id[27] = new Array(281, 282); answer_correct[27] = 281; answer_id[28] = new Array(291, 292); answer_correct[28] = 291; answer_id[29] = new Array(301, 302); answer_correct[29] = 302; answer_id[30] = new Array(311, 312); answer_correct[30] = 311; answer_id[31] = new Array(321, 322); answer_correct[31] = 322; answer_id[32] = new Array(331, 332); answer_correct[32] = 332; answer_id[33] = new Array(341, 342); answer_correct[33] = 341; answer_id[34] = new Array(351, 352); answer_correct[34] = 351; answer_id[35] = new Array(361, 362); answer_correct[35] = 361; answer_id[36] = new Array(371, 372); answer_correct[36] = 372; answer_id[37] = new Array(381, 382); answer_correct[37] = 382; answer_id[38] = new Array(391, 392); answer_correct[38] = 391; answer_id[39] = new Array(401, 402); answer_correct[39] = 402; function result_correct() {
+		var your_answer_correct = 0; for (i = 0; i < answer_correct.length; i++) { if (document.getElementById('answer_' + answer_correct[i]).checked == true) { your_answer_correct++; } }
+		var tyledung = (your_answer_correct / question_count) * 100; var username = "Admin"; if (tyledung >= 0 || username == 'Admin') { for (i in answer_correct) { document.getElementById('result_correct_' + answer_correct[i]).innerHTML = your_answer[1]; } }
+	}
+	function reset_result() {
+		for (i = 0; i < answer_id.length; i++) { for (j = 0; j < answer_id[i].length; j++) { document.getElementById('result_question_' + answer_id[i][j]).innerHTML = ''; document.getElementById('result_correct_' + answer_id[i][j]).innerHTML = ''; document.getElementById('answer_' + answer_id[i][j]).disabled = false; document.getElementById('answer_' + answer_id[i][j]).checked = false; } }
+		jQuery.noConflict(); var j$ = jQuery; j$("#table_tracnghiem tr").css('color', 'black');
+	}
+	function check_result() {
+		var your_answer_correct = 0; for (i = 0; i < answer_id.length; i++) {
+			for (j = 0; j < answer_id[i].length; j++) {
+				if (document.getElementById('answer_' + answer_id[i][j]).checked == true) { document.getElementById('result_question_' + answer_id[i][j]).innerHTML = your_answer[0]; }
+				document.getElementById('answer_' + answer_id[i][j]).disabled = true;
+			}
+		}
+		for (i = 0; i < answer_correct.length; i++) { if (document.getElementById('answer_' + answer_correct[i]).checked == true) { document.getElementById('result_question_' + answer_correct[i]).innerHTML = your_answer[1]; your_answer_correct++; } }
+		if (question_count == your_answer_correct)
+			var color = 'green'; else
+			var color = 'red'; function DocumentGetClientSize(document_obj) {
+				var b = document_obj.body; var r = document_obj.documentElement; var w = b.clientWidth; var h; if (w < r.clientWidth) w = r.clientWidth; if (document_obj.compatMode == "BackCompat") { h = b.clientHeight; } else { if (r.clientHeight) { h = r.clientHeight; } else { h = b.clientHeight; } }
+				return { width: w, height: h };
+			}
+		function WindowGetScrollPosition(window_obj) {
+			if (window_obj.pageXOffset === undefined) { } else if (window_obj.pageYOffset === undefined) { } else { return { x: window_obj.pageXOffset, y: window_obj.pageYOffset }; }
+			var d = window_obj.document; return { x: (d.documentElement.scrollLeft || d.body.scrollLeft), y: (d.documentElement.scrollTop || d.body.scrollTop) };
+		}
+		function ElementSetTextContent(element, str) {
+			if (element.textContent !== undefined) { element.textContent = str; }
+			if (element.innerText !== undefined) { element.innerText = str; }
+		}
+		function AlertDialog() {
+			var _this = this; var _element_popup = null; var _element_bg = null; this.onclose = null; this.setMessage = function (str) { var element_message = document.getElementById("alert_dialog_message"); if (element_message) { ElementSetTextContent(element_message, str); } }; this.setWidth = function (width) { var style = _element_popup.style; style.width = (width) + "px"; }; function update() { var style; var client_size = DocumentGetClientSize(document); var rect = _element_popup.getBoundingClientRect(); var element_width = rect.right - rect.left; var element_height = rect.bottom - rect.top; var element_x = (client_size.width / 2) - (element_width / 2); var element_y = (client_size.height / 2) - (element_height / 2); var scroll_pos = WindowGetScrollPosition(window); element_x += scroll_pos.x; element_y += scroll_pos.y; style = _element_popup.style; style.left = (element_x) + "px"; style.top = (element_y) + "px"; style = _element_bg.style; style.left = (scroll_pos.x) + "px"; style.top = (scroll_pos.y) + "px"; style.width = (client_size.width) + "px"; style.height = (client_size.height) + "px"; }
+			function release() {
+				var parent; if (window.removeEventListener) { window.removeEventListener("resize", update); window.removeEventListener("scroll", update); } else if (window.detachEvent) { window.detachEvent("onresize", update); window.detachEvent("onscroll", update); }
+				parent = _element_popup.parentNode; if (parent) { parent.removeChild(_element_popup); }
+				parent = _element_bg.parentNode; if (parent) { parent.removeChild(_element_bg); }
+			}
+			(function () {
+				var style; _element_bg = document.createElement("div"); style = _element_bg.style; style.position = "absolute"; style.backgroundColor = "#000"; var opacity = 0.5; style.opacity = opacity; style.filter = "alpha(opacity=" + (opacity * 100) + ")"; document.body.appendChild(_element_bg); _element_popup = document.createElement("div"); style = _element_popup.style; style.position = "absolute"; style.width = "300px"; style.backgroundColor = "#F8FAFA"; style.border = "3px #5c90d2 solid"; style.borderRadius = "10px"; style.boxShadow = "5px 5px 10px #444"; document.body.appendChild(_element_popup); _element_popup.innerHTML = '' + '<div style="font-weight:bold; background:#5c90d2; color:#fff; padding:5px;">' + '	Kết Quả Làm Bài Trắc Nghiệm' + '</div>' + '<div id="alert_dialog_message" style="margin:10px; padding:20px; font-size:18px; background:#fff; border:1px solid #888;">' + '</div>' + '<div style="margin:10px;" align = "right">' + '<input type="button" id="alert_dialog_button" class ="btn btn-minw btn-danger" style="width:30%;" value="Đóng lại">' + '</div>'; jQuery(function () { jQuery("input").keydown(function (e) { if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13) || (e.which && e.which === 32) || (e.keyCode && e.keyCode === 32)) { return false; } else { return true; } }); }); var element_button = document.getElementById("alert_dialog_button"); element_button.onclick = function () {
+					if (_this.onclose) { _this.onclose(); }
+					release();
+				}; if (window.addEventListener) { window.addEventListener("resize", update); window.addEventListener("scroll", update); } else if (window.attachEvent) { window.attachEvent("onresize", update); window.attachEvent("onscroll", update); }
+				update();
+			})();
+		}
+		var alert_dialog = new AlertDialog(); alert_dialog.setWidth(300); var ketqua = 'Bạn trả lời đúng: ' + your_answer_correct + '/' + question_count + ' câu'; alert_dialog.setMessage(ketqua); alert_dialog.onclose = function () { console.log("Đã đóng lại"); };
+	}</script>
