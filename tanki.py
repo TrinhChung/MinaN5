@@ -102,9 +102,15 @@ for i in range(1, 5):
         "./Audio/tankimastern5",
     )
 
+    scriptHtml = scriptHtml.replace(
+        "$(function(){$(",
+        "jQuery(function(){jQuery(",
+    )
+
     with open("tanki-choukai" + str(i) + ".html", "w", encoding="utf-8") as myFile:
         myFile.write(
             """
+<link rel="stylesheet" href="./choukai.css" type="text/css" />
 <link rel="stylesheet" href="./test.css" type="text/css" />
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -120,6 +126,10 @@ for i in range(1, 5):
 		</div>"""
         )
         myFile.write(questionHtml)
+        myFile.write(
+            '<script type="text/javascript">var question_count=document.querySelectorAll(".tracnghiem").length;</script>'
+        )
+        myFile.write(scriptHtml)
 
 # Close the browser
 driver.quit()
